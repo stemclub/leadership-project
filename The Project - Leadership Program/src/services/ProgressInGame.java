@@ -22,21 +22,23 @@ public class ProgressInGame {
 			return returning;
 		}
 		else if(tiersFinished[1] == false){
-			if(tierOne[1] == 'a'){
+			if(tierOne[0] == 'a'){
 				int[] returning = {1,0};
 				return returning;
 			}
-			else if(tierOne[1] == 'b'){
+			else if(tierOne[0] == 'b'){
 				int[] returning = {1,1};
 				return returning;
 			}
-			else if(tierOne[1] == 'c'){
+			else if(tierOne[0] == 'c'){
 				int[] returning = {1,2};
 				return returning;
 			}
 		}
 		else if(tiersFinished[2] == false){
-			
+			if(tierTwo[0] == 'a'){
+				
+			}
 		}
 	}
 }
