@@ -3,9 +3,9 @@ package services;
 public class ProgressInGame {	
 	private boolean[] tiersFinished = new boolean[4];
 	private char[] tierOne = new char[1];
-	private char[][] tierTwo = new char[3][3];
-	private char[][] tierThree = new char[6][3];
-	private char[][] tierFour = new char[6][3];
+	private char[] tierTwo = new char[3]
+	private char[] tierThree = new char[6];
+	private char[] tierFour = new char[6];
 	
 	public byte isEventDone(int Event){
 		if(tiersFinished[Event] == true){
@@ -37,7 +37,16 @@ public class ProgressInGame {
 		}
 		else if(tiersFinished[2] == false){
 			if(tierTwo[0] == 'a'){
-				
+				int[] returning = {2,0};
+				return returning;
+			}
+			else if(tierTwo[0] == 'b'){
+				int[] returning = {2,1};
+				return returning;
+			}
+			else if(tierTwo[0] == 'c'){
+				int[] returning = {2,2};
+				return returning;
 			}
 		}
 	}
