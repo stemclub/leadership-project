@@ -3,7 +3,7 @@ package services;
 public class ProgressInGame {	
 	private boolean[] tiersFinished = new boolean[4];
 	private char[] tierOne = new char[1];
-	private char[] tierTwo = new char[3]
+	private char[] tierTwo = new char[3];
 	private char[] tierThree = new char[6];
 	private char[] tierFour = new char[6];
 	
@@ -46,6 +46,18 @@ public class ProgressInGame {
 			}
 			else if(tierTwo[0] == 'c'){
 				int[] returning = {2,2};
+				return returning;
+			}
+			else if(tierTwo[1] == 'a'){
+				int[] returning = {,};
+				return returning;
+			}
+			else if(tierTwo[1] == 'b'){
+				int[] returning = {,};
+				return returning;
+			}
+			else if(tierTwo[1] == 'c'){
+				int[] returning = {,};
 				return returning;
 			}
 		}
