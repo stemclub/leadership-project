@@ -16,6 +16,13 @@ public class ProgressInGame {
 		}
 	}
 	
+	public void restartGame(){
+		for(int t = 0; t<=3; t++){
+			tiersFinished[t] = false;
+		}
+		System.out.println("Restarting...[success]");
+	}
+	
 	public int[] nextEventToBeDone(){
 		if(tiersFinished[0] == false){
 			int[] returning = {0,0};
