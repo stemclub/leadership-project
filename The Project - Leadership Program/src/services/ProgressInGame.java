@@ -68,5 +68,10 @@ public class ProgressInGame {
 				return returning;
 			}
 		}
+		else if(tiersFinished[3] == false){
+			if(tierThree[0] == 'a'){
+				
+			}
+		}
 	}
 }
