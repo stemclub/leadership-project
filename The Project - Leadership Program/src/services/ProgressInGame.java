@@ -105,6 +105,56 @@ public class ProgressInGame {
 				int[] returning = {3,2};
 				return returning;
 			}
+			else if(tierThree[2] == 'a'){
+				int[] returning = {3,3};
+				return returning;
+			}
+			else if(tierThree[2] == 'b'){
+				int[] returning = {3,2};
+				return returning;
+			}
+			else if(tierThree[2] == 'c'){
+				int[] returning = {3,1};
+				return returning;
+			}
+			else if(tierThree[3] == 'a'){
+				int[] returning = {3,1};
+				return returning;
+			}
+			else if(tierThree[3] == 'b'){
+				int[] returning = {3,4};
+				return returning;
+			}
+			else if(tierThree[3] == 'c'){
+				int[] returning = {3,3};
+				return returning;
+			}
+			else if(tierThree[4] == 'a'){
+				int[] returning = {3,1};
+				return returning;
+			}
+			else if(tierThree[4] == 'b'){
+				int[] returning = {3,3};
+				return returning;
+			}
+			else if(tierThree[4] == 'c'){
+				int[] returning = {3,2};
+				return returning;
+			}
+			else if(tierThree[5] == 'a'){
+				int[] returning = {3,5};
+				return returning;
+			}
+			else if(tierThree[5] == 'b'){
+				int[] returning = {3,2};
+				return returning;
+			}
+			else if(tierThree[5] == 'c'){
+				int[] returning = {3,3};
+				return returning;
+			}
 		}
+		int[] returning = {4, 0};
+		return returning;
 	}
 }
