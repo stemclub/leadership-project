@@ -19,6 +19,17 @@ public class ProgressInGame {
 		}
 	}
 	
+	public void setTierDone(int Tier, int Event, char Choice, ProgressInGame n){
+		n.tiersFinished[Tier] = true;
+		switch(Tier){
+			case(0):n.tiers[0][Event] = Choice;
+			case(1):n.tiers[1][Event] = Choice;
+			case(2):n.tiers[2][Event] = Choice;
+			case(3):n.tiers[3][Event] = Choice;
+			case(4):n.tiers[4][Event] = Choice;
+		}
+	}
+	
 	public void restartGame(){
 		for(int t = 0; t<=4; t++){
 			tiersFinished[t] = false;
@@ -305,6 +316,8 @@ public class ProgressInGame {
 				return returning;
 			}
 		}
+		int[] returning = {6,0};
+		return returning;
 	}
 	
 	public void totalScore(ProgressInGame n){
