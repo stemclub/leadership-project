@@ -231,77 +231,77 @@ public class ProgressInGame {
 				return returning;
 			}
 		}
-		else if(tiersFinished[4] == false){
-			/*if(tiers[3][0] == 'a'){
-				int[] returning = {4,0};
+		else if(tiersFinished[5] == false){
+			/*if(tiers[4][0] == 'a'){
+				int[] returning = {5,0};
 				return returning;
 			}
-			else if(tiers[3][0] == 'b'){
-				int[] returning = {4,1};
+			else if(tiers[4][0] == 'b'){
+				int[] returning = {5,1};
 				return returning;
 			}
-			else if(tiers[3][0] == 'c'){
-				int[] returning = {4,2};
+			else if(tiers[4][0] == 'c'){
+				int[] returning = {5,2};
 				return returning;
 			}
-			else if(tiers[3][1] == 'a'){
-				int[] returning = {4,1};
+			else if(tiers[4][1] == 'a'){
+				int[] returning = {5,1};
 				return returning;
 			}
-			else if(tiers[3][1] == 'b'){
-				int[] returning = {4,2};
+			else if(tiers[4][1] == 'b'){
+				int[] returning = {5,2};
 				return returning;
 			}
-			else if(tiers[3][1] == 'c'){
-				int[] returning = {4,3};
+			else if(tiers[4][1] == 'c'){
+				int[] returning = {5,3};
 				return returning;
 			}
-			else if(tiers[3][2] == 'a'){
-				int[] returning = {4,2};
+			else if(tiers[4][2] == 'a'){
+				int[] returning = {5,2};
 				return returning;
 			}
-			else if(tiers[3][2] == 'b'){
-				int[] returning = {4,3};
+			else if(tiers[4][2] == 'b'){
+				int[] returning = {5,3};
 				return returning;
 			}
-			else if(tiers[3][2] == 'c'){
-				int[] returning = {4,0};
+			else if(tiers[4][2] == 'c'){
+				int[] returning = {5,0};
 				return returning;
 			}
-			else if(tiers[3][3] == 'a'){
-				int[] returning = {4,4};
+			else if(tiers[4][3] == 'a'){
+				int[] returning = {5,4};
 				return returning;
 			}
-			else if(tiers[3][3] == 'b'){
-				int[] returning = {4,0};
+			else if(tiers[4][3] == 'b'){
+				int[] returning = {5,0};
 				return returning;
 			}
-			else if(tiers[3][3] == 'c'){
-				int[] returning = {4,2};
+			else if(tiers[4][3] == 'c'){
+				int[] returning = {5,2};
 				return returning;
 			}
-			else if(tiers[3][4] == 'a'){
-				int[] returning = {4,1};
+			else if(tiers[4][4] == 'a'){
+				int[] returning = {5,1};
 				return returning;
 			}
-			else if(tiers[3][4] == 'b'){
-				int[] returning = {4,5};
+			else if(tiers[4][4] == 'b'){
+				int[] returning = {5,5};
 				return returning;
 			}
-			else if(tiers[3][4] == 'c'){
-				int[] returning = {4,0};
+			else if(tiers[4][4] == 'c'){
+				int[] returning = {5,0};
 				return returning;
 			}
-			else if(tiers[3][5] == 'a'){
-				int[] returning = {4,5};
+			else if(tiers[4][5] == 'a'){
+				int[] returning = {5,5};
 				return returning;
 			}
-			else if(tiers[3][5] == 'b'){
-				int[] returning = {4,0};
+			else if(tiers[4][5] == 'b'){
+				int[] returning = {5,0};
 				return returning;
 			}
-			else if(tiers[3][5] == 'c'){
-				int[] returning = {4,4};
+			else if(tiers[4][5] == 'c'){
+				int[] returning = {5,4};
 				return returning;
 			}*/
 		}
