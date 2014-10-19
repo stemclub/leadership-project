@@ -231,6 +231,80 @@ public class ProgressInGame {
 				return returning;
 			}
 		}
+		else if(tiersFinished[4] == false){
+			/*if(tiers[3][0] == 'a'){
+				int[] returning = {4,0};
+				return returning;
+			}
+			else if(tiers[3][0] == 'b'){
+				int[] returning = {4,1};
+				return returning;
+			}
+			else if(tiers[3][0] == 'c'){
+				int[] returning = {4,2};
+				return returning;
+			}
+			else if(tiers[3][1] == 'a'){
+				int[] returning = {4,1};
+				return returning;
+			}
+			else if(tiers[3][1] == 'b'){
+				int[] returning = {4,2};
+				return returning;
+			}
+			else if(tiers[3][1] == 'c'){
+				int[] returning = {4,3};
+				return returning;
+			}
+			else if(tiers[3][2] == 'a'){
+				int[] returning = {4,2};
+				return returning;
+			}
+			else if(tiers[3][2] == 'b'){
+				int[] returning = {4,3};
+				return returning;
+			}
+			else if(tiers[3][2] == 'c'){
+				int[] returning = {4,0};
+				return returning;
+			}
+			else if(tiers[3][3] == 'a'){
+				int[] returning = {4,4};
+				return returning;
+			}
+			else if(tiers[3][3] == 'b'){
+				int[] returning = {4,0};
+				return returning;
+			}
+			else if(tiers[3][3] == 'c'){
+				int[] returning = {4,2};
+				return returning;
+			}
+			else if(tiers[3][4] == 'a'){
+				int[] returning = {4,1};
+				return returning;
+			}
+			else if(tiers[3][4] == 'b'){
+				int[] returning = {4,5};
+				return returning;
+			}
+			else if(tiers[3][4] == 'c'){
+				int[] returning = {4,0};
+				return returning;
+			}
+			else if(tiers[3][5] == 'a'){
+				int[] returning = {4,5};
+				return returning;
+			}
+			else if(tiers[3][5] == 'b'){
+				int[] returning = {4,0};
+				return returning;
+			}
+			else if(tiers[3][5] == 'c'){
+				int[] returning = {4,4};
+				return returning;
+			}*/
+		}
 	}
 	
 	public void totalScore(ProgressInGame n){
