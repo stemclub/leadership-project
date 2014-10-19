@@ -232,7 +232,7 @@ public class ProgressInGame {
 			}
 		}
 		else if(tiersFinished[5] == false){
-			/*if(tiers[4][0] == 'a'){
+			if(tiers[4][0] == 'a'){
 				int[] returning = {5,0};
 				return returning;
 			}
@@ -245,23 +245,23 @@ public class ProgressInGame {
 				return returning;
 			}
 			else if(tiers[4][1] == 'a'){
-				int[] returning = {5,1};
+				int[] returning = {5,3};
 				return returning;
 			}
 			else if(tiers[4][1] == 'b'){
-				int[] returning = {5,2};
+				int[] returning = {5,1};
 				return returning;
 			}
 			else if(tiers[4][1] == 'c'){
-				int[] returning = {5,3};
+				int[] returning = {5,0};
 				return returning;
 			}
 			else if(tiers[4][2] == 'a'){
-				int[] returning = {5,2};
+				int[] returning = {5,1};
 				return returning;
 			}
 			else if(tiers[4][2] == 'b'){
-				int[] returning = {5,3};
+				int[] returning = {5,2};
 				return returning;
 			}
 			else if(tiers[4][2] == 'c'){
@@ -269,19 +269,19 @@ public class ProgressInGame {
 				return returning;
 			}
 			else if(tiers[4][3] == 'a'){
-				int[] returning = {5,4};
+				int[] returning = {5,1};
 				return returning;
 			}
 			else if(tiers[4][3] == 'b'){
-				int[] returning = {5,0};
+				int[] returning = {5,4};
 				return returning;
 			}
 			else if(tiers[4][3] == 'c'){
-				int[] returning = {5,2};
+				int[] returning = {5,0};
 				return returning;
 			}
 			else if(tiers[4][4] == 'a'){
-				int[] returning = {5,1};
+				int[] returning = {5,2};
 				return returning;
 			}
 			else if(tiers[4][4] == 'b'){
@@ -297,13 +297,13 @@ public class ProgressInGame {
 				return returning;
 			}
 			else if(tiers[4][5] == 'b'){
-				int[] returning = {5,0};
+				int[] returning = {5,2};
 				return returning;
 			}
 			else if(tiers[4][5] == 'c'){
-				int[] returning = {5,4};
+				int[] returning = {5,0};
 				return returning;
-			}*/
+			}
 		}
 	}
 	
