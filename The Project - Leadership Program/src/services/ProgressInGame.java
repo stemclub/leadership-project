@@ -34,7 +34,7 @@ public class ProgressInGame {
 		for(int t = 0; t<=4; t++){
 			tiersFinished[t] = false;
 		}
-		System.out.println("Restarting...[success]"); //Testing
+		System.out.println("Restarting...[success]");
 	}
 	
 	public int[] nextEventToBeDone(){
