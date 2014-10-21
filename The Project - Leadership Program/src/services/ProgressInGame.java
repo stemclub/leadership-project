@@ -1,6 +1,7 @@
 package services;
 
-public class ProgressInGame {	
+public class ProgressInGame {
+    //Initializes arrays
 	private boolean[] tiersFinished = new boolean[5];
 	private char[] tierOne = new char[1];
 	private char[] tierTwo = new char[3];
@@ -10,6 +11,7 @@ public class ProgressInGame {
 	
 	private char[][] tiers = {tierOne, tierTwo, tierThree, tierFour, tierFive};
 	
+    //Sets events as done
 	public byte isEventDone(int Event){
 		if(tiersFinished[Event] == true){
 			return 1;
@@ -19,6 +21,7 @@ public class ProgressInGame {
 		}
 	}
 	
+    //Sets tiers as done
 	public void setTierDone(int Tier, int Event, char Choice, ProgressInGame n){
 		n.tiersFinished[Tier] = true;
 		switch(Tier){
@@ -30,6 +33,7 @@ public class ProgressInGame {
 		}
 	}
 	
+    //Restarts game
 	public void restartGame(){
 		for(int t = 0; t<=4; t++){
 			tiersFinished[t] = false;
@@ -37,6 +41,7 @@ public class ProgressInGame {
 		System.out.println("Restarting...[success]");
 	}
 	
+    //Calculates next event to be done
 	public int[] nextEventToBeDone(){
 		if(tiersFinished[0] == false){
 			int[] returning = {0,0};
@@ -320,6 +325,7 @@ public class ProgressInGame {
 		return returning;
 	}
 	
+    //Finds total score
 	public void totalScore(ProgressInGame n){
 		int[] compare = n.nextEventToBeDone();
 		if(compare[0] == 4 && compare[1] == 0){
