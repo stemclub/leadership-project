@@ -9,24 +9,29 @@ import java.io.IOException;
 public class WriteSave {
 	public static void saveData(ProgressInGame thisIsIt){
 		try {	
-			File file = new File("Progress.lead");
+			//Make new instance of file
+            File file = new File("Progress.lead");
 	
-			file.delete();
+			//Delete file first
+            file.delete();
 	
-			// if file doesn't exists, then create it
+			//If file doesn't exist, then create it. Yay.
 			if (!file.exists()) {
 				file.createNewFile();
 			}			
 	
-			FileWriter fw = new FileWriter(file.getAbsoluteFile());
+			//Writes current progress to file (with a for loop!)
+            FileWriter fw = new FileWriter(file.getAbsoluteFile());
 			BufferedWriter bw = new BufferedWriter(fw);
 			for(int n = 0; n <= 3; n++){
 				bw.write(thisIsIt.isEventDone(n));
 			}
-			bw.close();
+			//Closes BufferedWriter
+            bw.close();
 			System.out.println("Updated...[success]");
 		} 
-		catch (IOException e) {
+		//Exception catching service. Don't you just love exceptions?
+        catch (IOException e) {
 			e.printStackTrace();
 			System.out.println("Write IOException " + e + "...[fail]");
 		}	
