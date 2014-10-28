@@ -70,6 +70,6 @@ public class DataStorage {
         {"LeadItUp/6/d.mov"},
         {"LeadItUp/6/e.mov"},
         {"LeadItUp/6/f.mov"},
-		
-	}
+	};	
 }
+

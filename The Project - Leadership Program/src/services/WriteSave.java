@@ -30,7 +30,22 @@ public class WriteSave {
 			for(int y= 0; y < 1; y++){
 				bw.write(thisIsIt.tierOne[y]);
 			}
-			
+			bw.newLine();
+			for(int y = 0; y < 3; y++){
+				bw.write(thisIsIt.tierTwo[y]);
+			}
+			bw.newLine();
+			for(int y = 0; y < 6; y++){
+				bw.write(thisIsIt.tierThree[y]);
+			}
+			bw.newLine();
+			for(int y = 0; y < 6; y++){
+				bw.write(thisIsIt.tierFour[y]);
+			}
+			bw.newLine();
+			for(int y = 0; y < 6; y++){
+				bw.write(thisIsIt.tierFive[y]);
+			}
 			//Closes BufferedWriter
             bw.close();
 			System.out.println("Updated...[success]");
