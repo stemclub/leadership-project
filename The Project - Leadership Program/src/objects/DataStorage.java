@@ -40,4 +40,10 @@ public class DataStorage {
 			{3,2,1},
 		}
 	};
+	
+	public static String[][] filePaths = {
+		{"LeadItUp/TierOne/tierOne.mov"},
+		{"LeadItUp"
+		
+	}
 }
