@@ -15,7 +15,7 @@ public class Event {
 		}
 	}
 
-	public Event(String[] videoPaths, char[] choices) {
+	public Event(String[] videoPaths, char[] choices, ) {
 		super();
 		this.videoPaths = videoPaths;
 		this.choices = choices;

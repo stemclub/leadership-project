@@ -23,8 +23,8 @@ public class WriteSave {
 			//Writes current progress to file (with a for loop!)
             FileWriter fw = new FileWriter(file.getAbsoluteFile());
 			BufferedWriter bw = new BufferedWriter(fw);
-			for(int n = 0; n <= 3; n++){
-				bw.write(thisIsIt.isEventDone(n));
+			for(int n = 0; n <= 4; n++){
+				bw.write("" + thisIsIt.isEventDone(n));
 			}
 			//Closes BufferedWriter
             bw.close();
