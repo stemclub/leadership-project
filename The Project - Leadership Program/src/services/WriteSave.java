@@ -26,6 +26,11 @@ public class WriteSave {
 			for(int n = 0; n <= 4; n++){
 				bw.write("" + thisIsIt.isEventDone(n));
 			}
+			bw.newLine();
+			for(int y= 0; y < 1; y++){
+				bw.write(thisIsIt.tierOne[y]);
+			}
+			
 			//Closes BufferedWriter
             bw.close();
 			System.out.println("Updated...[success]");

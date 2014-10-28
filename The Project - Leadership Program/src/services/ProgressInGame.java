@@ -3,11 +3,11 @@ package services;
 public class ProgressInGame {
     //Initializes arrays. Great job.
 	private boolean[] tiersFinished = new boolean[5];
-	private char[] tierOne = new char[1];
-	private char[] tierTwo = new char[3];
-	private char[] tierThree = new char[6];
-	private char[] tierFour = new char[6];
-	private char[] tierFive = new char[6];
+	char[] tierOne = new char[1];
+	char[] tierTwo = new char[3];
+	char[] tierThree = new char[6];
+	char[] tierFour = new char[6];
+	char[] tierFive = new char[6];
 	
 	private char[][] tiers = {tierOne, tierTwo, tierThree, tierFour, tierFive};
 	
@@ -332,4 +332,62 @@ public class ProgressInGame {
 			
 		}
 	}
+
+	public boolean[] getTiersFinished() {
+		return tiersFinished;
+	}
+
+	public void setTiersFinished(boolean[] tiersFinished) {
+		this.tiersFinished = tiersFinished;
+	}
+
+	public char[] getTierOne() {
+		return tierOne;
+	}
+
+	public void setTierOne(char[] tierOne) {
+		this.tierOne = tierOne;
+	}
+
+	public char[] getTierTwo() {
+		return tierTwo;
+	}
+
+	public void setTierTwo(char[] tierTwo) {
+		this.tierTwo = tierTwo;
+	}
+
+	public char[] getTierThree() {
+		return tierThree;
+	}
+
+	public void setTierThree(char[] tierThree) {
+		this.tierThree = tierThree;
+	}
+
+	public char[] getTierFour() {
+		return tierFour;
+	}
+
+	public void setTierFour(char[] tierFour) {
+		this.tierFour = tierFour;
+	}
+
+	public char[] getTierFive() {
+		return tierFive;
+	}
+
+	public void setTierFive(char[] tierFive) {
+		this.tierFive = tierFive;
+	}
+
+	public char[][] getTiers() {
+		return tiers;
+	}
+
+	public void setTiers(char[][] tiers) {
+		this.tiers = tiers;
+	}
+	
+	
 }

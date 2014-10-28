@@ -10,6 +10,6 @@ public class Tier {
 		for(int x = 0; x < numberOfEvents; x++){
 			Event newEvent = new Event(DataStorage.filePaths[tierNumber][x], tierNumber, x);
 			events[x] = newEvent;
-		}
+		} 
 	}	
 }
