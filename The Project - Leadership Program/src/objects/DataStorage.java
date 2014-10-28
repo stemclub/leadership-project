@@ -42,8 +42,34 @@ public class DataStorage {
 	};
 	
 	public static String[][] filePaths = {
-		{"LeadItUp/TierOne/tierOne.mov"},
-		{"LeadItUp"
+		{"LeadItUp/1/a.mov"},
+		{"LeadItUp/2/a.mov"},
+        {"LeadItUp/2/b.mov"},
+        {"LeadItUp/2/c.mov"},
+        {"LeadItUp/3/a.mov"},
+        {"LeadItUp/3/b.mov"},
+        {"LeadItUp/3/c.mov"},
+        {"LeadItUp/3/d.mov"},
+        {"LeadItUp/3/e.mov"},
+        {"LeadItUp/3/f.mov"},
+        {"LeadItUp/4/a.mov"},
+        {"LeadItUp/4/b.mov"},
+        {"LeadItUp/4/c.mov"},
+        {"LeadItUp/4/d.mov"},
+        {"LeadItUp/4/e.mov"},
+        {"LeadItUp/4/f.mov"},
+        {"LeadItUp/5/a.mov"},
+        {"LeadItUp/5/b.mov"},
+        {"LeadItUp/5/c.mov"},
+        {"LeadItUp/5/d.mov"},
+        {"LeadItUp/5/e.mov"},
+        {"LeadItUp/5/f.mov"},
+        {"LeadItUp/6/a.mov"},
+        {"LeadItUp/6/b.mov"},
+        {"LeadItUp/6/c.mov"},
+        {"LeadItUp/6/d.mov"},
+        {"LeadItUp/6/e.mov"},
+        {"LeadItUp/6/f.mov"},
 		
 	}
 }
