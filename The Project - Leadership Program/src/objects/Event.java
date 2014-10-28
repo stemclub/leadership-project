@@ -1,8 +1,9 @@
 package objects;
 
 public class Event {
-	private String[] videoPaths;
+	private String videoPath;
 	private char[] choices;
+	private char choice;
 	private int scoreForRound;
 	private int tier;
 	private int eventNumber;
@@ -15,9 +16,10 @@ public class Event {
 		}
 	}
 
-	public Event(String[] videoPaths, char[] choices, ) {
+	public Event(String videoPath, int tier, int eventNumber) {
 		super();
-		this.videoPaths = videoPaths;
-		this.choices = choices;
+		this.videoPath = videoPath;
+		this.tier = tier;
+		this.eventNumber = eventNumber;
 	}
 }
