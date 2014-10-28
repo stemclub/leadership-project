@@ -42,34 +42,52 @@ public class DataStorage {
 	};
 	
 	public static String[][] filePaths = {
+    {
+        //Tier One
 		{"LeadItUp/1/a.mov"},
+    },
+    {
+        //Tier Two
 		{"LeadItUp/2/a.mov"},
         {"LeadItUp/2/b.mov"},
         {"LeadItUp/2/c.mov"},
+    },
+    {
+        //Tier Three
         {"LeadItUp/3/a.mov"},
         {"LeadItUp/3/b.mov"},
         {"LeadItUp/3/c.mov"},
         {"LeadItUp/3/d.mov"},
         {"LeadItUp/3/e.mov"},
         {"LeadItUp/3/f.mov"},
+    },
+    {
+        //Tier Four
         {"LeadItUp/4/a.mov"},
         {"LeadItUp/4/b.mov"},
         {"LeadItUp/4/c.mov"},
         {"LeadItUp/4/d.mov"},
         {"LeadItUp/4/e.mov"},
         {"LeadItUp/4/f.mov"},
+    },
+    {
+        //Tier Five
         {"LeadItUp/5/a.mov"},
         {"LeadItUp/5/b.mov"},
         {"LeadItUp/5/c.mov"},
         {"LeadItUp/5/d.mov"},
         {"LeadItUp/5/e.mov"},
         {"LeadItUp/5/f.mov"},
+    },
+    {
+        //Tier Six
         {"LeadItUp/6/a.mov"},
         {"LeadItUp/6/b.mov"},
         {"LeadItUp/6/c.mov"},
         {"LeadItUp/6/d.mov"},
         {"LeadItUp/6/e.mov"},
         {"LeadItUp/6/f.mov"},
+    },
 	};	
 }
 
