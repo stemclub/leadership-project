@@ -42,12 +42,20 @@ public class ProgressInGame {
     //Sets tiers as done as needed
 	public void setTierDone(int Tier, int Event, char Choice, ProgressInGame n){
 		n.tiersFinished[Tier] = true;
-		switch(Tier){
-			case(0):n.tiers[0][Event] = Choice;
-			case(1):n.tiers[1][Event] = Choice;
-			case(2):n.tiers[2][Event] = Choice;
-			case(3):n.tiers[3][Event] = Choice;
-			case(4):n.tiers[4][Event] = Choice;
+		if (Tier == 0){
+			tiers[Tier][Event] = Choice;
+		}
+		else if(Tier == 1){
+			tiers[Tier][Event] = Choice;
+		}
+		else if(Tier == 2){
+			tiers[Tier][Event] = Choice;
+		}
+		else if(Tier == 3){
+			tiers[Tier][Event] = Choice;
+		}
+		else if(Tier == 4){
+			tiers[Tier][Event] = Choice;
 		}
 	}
 	

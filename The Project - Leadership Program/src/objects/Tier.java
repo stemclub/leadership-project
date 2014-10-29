@@ -1,5 +1,7 @@
 package objects;
 
+import services.ProgressInGame;
+
 public class Tier {
 	private int tierNumber;
 	private int numberOfEvents;
@@ -11,5 +13,5 @@ public class Tier {
 			Event newEvent = new Event(DataStorage.filePaths[tierNumber][x], tierNumber, x);
 			events[x] = newEvent;
 		} 
-	}	
+	}
 }
