@@ -21,6 +21,24 @@ public class ProgressInGame {
 		}
 	}
 	
+	public void initializeArrays(){
+		for(int u = 0; u < 1; u++){
+			tierOne[u] = 'z';
+		}
+		for(int u = 0; u < 3; u++){
+			tierTwo[u] = 'z';
+		}
+		for(int u = 0; u < 6; u++){
+			tierThree[u] = 'z';
+		}
+		for(int u = 0; u < 6; u++){
+			tierFour[u] = 'z';
+		}
+		for(int u = 0; u < 6; u++){
+			tierFive[u] = 'z';
+		}
+	}
+	
     //Sets tiers as done as needed
 	public void setTierDone(int Tier, int Event, char Choice, ProgressInGame n){
 		n.tiersFinished[Tier] = true;
