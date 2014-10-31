@@ -8,7 +8,7 @@ public class Tier {
 	private int score;
 	private Event[] events;
 	
-	public void initilizeEvents(){
+	public void initializeEvents(){
 		for(int x = 0; x < numberOfEvents; x++){
 			Event newEvent = new Event(DataStorage.filePaths[tierNumber][x], tierNumber, x);
 			events[x] = newEvent;
