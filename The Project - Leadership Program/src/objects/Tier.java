@@ -1,5 +1,9 @@
 package objects;
 
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
+
 import services.ProgressInGame;
 
 public class Tier {
@@ -13,5 +17,11 @@ public class Tier {
 			Event newEvent = new Event(DataStorage.filePaths[tierNumber][x], tierNumber, x);
 			events[x] = newEvent;
 		} 
+	}
+	
+	public void openVideo(ProgressInGame n) throws IOException{
+		int[] d = n.nextEventToBeDone();
+		String h = events[d[2]].getVideoPath();
+		Desktop.getDesktop().open(new File(h));
 	}
 }
