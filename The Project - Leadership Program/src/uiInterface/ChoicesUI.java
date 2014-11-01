@@ -11,13 +11,18 @@ public class ChoicesUI extends JFrame{
 	private JButton Choice1 = new JButton("Choice 1");
 	private JButton Choice2 = new JButton("Choice 2");
 	private JButton Choice3 = new JButton("Choice 3");
-	private JButton ReplayVideo = new JButton("Replay the Video");
+	private JButton ReplayVideo = new JButton("Replay");
 	public JPanel ChoicesPanel = new JPanel();
 	public static char choice;
 	public static boolean replayVideo;
 	
 	public ChoicesUI(){
 		ChoicesPanel.add(Choice1);
+		JFrame frame = new JFrame();
+		frame.add(ChoicesPanel);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(400, 400);
+        frame.setVisible(true);
 		
 	}
 	private class ButtonListener implements ActionListener{

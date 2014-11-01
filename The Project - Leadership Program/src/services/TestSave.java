@@ -4,7 +4,10 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 
+import javax.swing.JFrame;
+
 import objects.Tier;
+import uiInterface.ChoicesUI;
 
 public class TestSave {
 	public static void main(String[]args) throws IOException{
@@ -16,6 +19,7 @@ public class TestSave {
 		n.setTierDone(0, 0, 'a', n);
 		n.nextEventToBeDone();
 		Desktop.getDesktop().open(new File("C:/Users/shalin/Videos/Movies/Home_Alone/Home_Alone_4_[DVDRip][2002][Eng].avi"));
+		ChoicesUI tests = new ChoicesUI();
 		WriteSave.saveData(n);
 	}
 }
