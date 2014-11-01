@@ -79,7 +79,7 @@ public class ProgressInGame {
 				return returning;
 			}
 			else if(tiers[0][0] == 'b'){
-				int[] returning = {1,1};
+				int[] returning = {1,1}; 
 				return returning;
 			}
 			else if(tiers[0][0] == 'c'){

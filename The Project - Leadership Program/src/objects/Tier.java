@@ -22,6 +22,18 @@ public class Tier {
 	public void openVideo(ProgressInGame n) throws IOException{
 		int[] d = n.nextEventToBeDone();
 		String h = events[d[2]].getVideoPath();
-		Desktop.getDesktop().open(new File(h));
+		Desktop.getDesktop().open(new File("C:/Users/shalin/Videos/Movies/Home_Alone/Home_Alone_4_[DVDRip][2002][Eng].avi"));
+	}
+
+	public Tier(int tierNumber, int numberOfEvents, int score, Event[] events) {
+		super();
+		this.tierNumber = tierNumber;
+		this.numberOfEvents = numberOfEvents;
+		this.score = score;
+		this.events = events;
+	}
+
+	public Tier() {
+		// TODO Auto-generated constructor stub
 	}
 }
