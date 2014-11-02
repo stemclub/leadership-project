@@ -16,6 +16,8 @@ public class TestSave {
 		n.initializeArrays();
 		n.setTierDone(0, 0, 'a', n);
 		n.nextEventToBeDone();
+		DownloadVideo down = new DownloadVideo();
+		down.main();
 		FXMediaPlayer player = new FXMediaPlayer();
 		JFrame frame = player.main(args);
 		Thread.sleep(5000);
