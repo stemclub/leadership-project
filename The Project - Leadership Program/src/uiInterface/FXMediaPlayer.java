@@ -27,9 +27,13 @@ public class FXMediaPlayer{
         // create media player
         
         URL url = this.getClass().getProtectionDomain().getCodeSource().getLocation();
-        String mediaURL = "file://" + url.getFile() + "/Videos/1/a.mp4";
-        if(url.getFile().toString().endsWith("jar")) {
-        	mediaURL = "jar:file://" + url.getFile() + "!/1/a.mp4";
+        int index = url.getFile().lastIndexOf("/");
+        String path = url.getFile().substring(0, index);
+        String mediaURL = "file://" + path + "/LeadVideos/1/a.mp4";
+        if(path.endsWith("bin")) {
+        	int index2 = path.lastIndexOf("/");
+        	path = path.substring(0,  index2);
+        	mediaURL = "file://" + path + "/Videos/1/a.mp4";
         }
         Media media = new Media(mediaURL);
         MediaPlayer mediaPlayer = new MediaPlayer(media);
