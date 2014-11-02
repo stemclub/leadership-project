@@ -1,5 +1,9 @@
 package uiInterface;
 
+import java.net.URL;
+import java.net.URLDecoder;
+import java.util.logging.Logger;
+
 import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
 import javafx.scene.Group;
@@ -7,19 +11,27 @@ import javafx.scene.Scene;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
+
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
 public class FXMediaPlayer{
+	final static Logger logger = Logger.getLogger("test");
+    //private static final String MEDIA_URL = "file:///Volumes/Eddie%20Li%202/STEM%20Club/Videos/LeadItUp/1/a.mp4";
+	//private static final String MEDIA_URL = "";
      
-    private static final String MEDIA_URL = "file:///Volumes/Eddie%20Li%202/STEM%20Club/Videos/LeadItUp/1/a.mp4";
-     
-    private static void initFxLater(JFXPanel panel){
+    private void initFxLater(JFXPanel panel){
         Group root = new Group();
         Scene scene = new Scene(root, 1280, 720);
          
         // create media player
-        Media media = new Media(MEDIA_URL);
+        
+        URL url = this.getClass().getProtectionDomain().getCodeSource().getLocation();
+        String mediaURL = "file://" + url.getFile() + "/Videos/1/a.mp4";
+        if(url.getFile().toString().endsWith("jar")) {
+        	mediaURL = "jar:file://" + url.getFile() + "!/1/a.mp4";
+        }
+        Media media = new Media(mediaURL);
         MediaPlayer mediaPlayer = new MediaPlayer(media);
         mediaPlayer.setAutoPlay(true);
          
@@ -31,6 +43,8 @@ public class FXMediaPlayer{
     }
  
     public JFrame main(String[] args) {
+    	URL url = this.getClass().getProtectionDomain().getCodeSource().getLocation();
+    	logger.info(url.getFile());
     	JFrame jFrame = new JFrame("LeadItUp");
         SwingUtilities.invokeLater(new Runnable() {
  
