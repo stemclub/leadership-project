@@ -1,13 +1,14 @@
 package services;
 
-import java.awt.Desktop;
-import java.io.File;
 import java.io.IOException;
 
+import javax.swing.JFrame;
+
 import objects.Tier;
+import uiInterface.FXMediaPlayer;
 
 public class TestSave {
-	public static void main(String[]args) throws IOException{
+	public static void main(String[]args) throws IOException, InterruptedException{
 		//Tests a save! The title doesn't tell you anything about this file...
         ProgressInGame n = new ProgressInGame();
         Tier test = new Tier();
@@ -15,7 +16,11 @@ public class TestSave {
 		n.initializeArrays();
 		n.setTierDone(0, 0, 'a', n);
 		n.nextEventToBeDone();
-		Desktop.getDesktop().open(new File("C:/Users/shalin/Videos/Movies/Home_Alone/Home_Alone_4_[DVDRip][2002][Eng].avi"));
+		FXMediaPlayer player = new FXMediaPlayer();
+		JFrame frame = player.main(args);
+		Thread.sleep(5000);
+		frame.setVisible(false);
+		frame.dispose();
 		WriteSave.saveData(n);
 	}
 }
