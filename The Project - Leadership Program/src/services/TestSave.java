@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import javax.swing.JFrame;
 
+import objects.DataStorage;
 import objects.Tier;
 import uiInterface.FXMediaPlayer;
 
@@ -18,11 +19,12 @@ public class TestSave {
 		n.nextEventToBeDone();
 		DownloadVideo down = new DownloadVideo();
 		down.main();
-		FXMediaPlayer player = new FXMediaPlayer();
-		JFrame frame = player.main(args);
-		Thread.sleep(5000);
-		frame.setVisible(false);
-		frame.dispose();
+		//FXMediaPlayer player = new FXMediaPlayer();
+		//JFrame frame = player.main(args);
+		//Thread.sleep(5000);
+		//frame.setVisible(false);
+		//frame.dispose();
+		System.out.println(DataStorage.filePaths[1][1][0]);
 		WriteSave.saveData(n);
 	}
 }

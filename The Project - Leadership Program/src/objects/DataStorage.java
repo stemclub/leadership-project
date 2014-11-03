@@ -41,52 +41,52 @@ public class DataStorage {
 		}
 	};
 	
-	public static String[][] filePaths = {
+	public static String[][][] filePaths = {
     {
         //Tier One
-		{"LeadItUp/1/a.mov"},
+		{"LeadVideos/1/a.mov"},
     },
     {
         //Tier Two
-		{"LeadItUp/2/a.mov"},
-        {"LeadItUp/2/b.mov"},
-        {"LeadItUp/2/c.mov"},
+		{"LeadVideos/2/a.mov"},
+        {"LeadVideos/2/b.mov"},
+        {"LeadVideos/2/c.mov"},
     },
     {
         //Tier Three
-        {"LeadItUp/3/a.mov"},
-        {"LeadItUp/3/b.mov"},
-        {"LeadItUp/3/c.mov"},
-        {"LeadItUp/3/d.mov"},
-        {"LeadItUp/3/e.mov"},
-        {"LeadItUp/3/f.mov"},
+        {"LeadVideos/3/a.mov"},
+        {"LeadVideos/3/b.mov"},
+        {"LeadVideos/3/c.mov"},
+        {"LeadVideos/3/d.mov"},
+        {"LeadVideos/3/e.mov"},
+        {"LeadVideos/3/f.mov"},
     },
     {
         //Tier Four
-        {"LeadItUp/4/a.mov"},
-        {"LeadItUp/4/b.mov"},
-        {"LeadItUp/4/c.mov"},
-        {"LeadItUp/4/d.mov"},
-        {"LeadItUp/4/e.mov"},
-        {"LeadItUp/4/f.mov"},
+        {"LeadVideos/4/a.mov"},
+        {"LeadVideos/4/b.mov"},
+        {"LeadVideos/4/c.mov"},
+        {"LeadVideos/4/d.mov"},
+        {"LeadVideos/4/e.mov"},
+        {"LeadVideos/4/f.mov"},
     },
     {
         //Tier Five
-        {"LeadItUp/5/a.mov"},
-        {"LeadItUp/5/b.mov"},
-        {"LeadItUp/5/c.mov"},
-        {"LeadItUp/5/d.mov"},
-        {"LeadItUp/5/e.mov"},
-        {"LeadItUp/5/f.mov"},
+        {"LeadVideos/5/a.mov"},
+        {"LeadVideos/5/b.mov"},
+        {"LeadVideos/5/c.mov"},
+        {"LeadVideos/5/d.mov"},
+        {"LeadVideos/5/e.mov"},
+        {"LeadVideos/5/f.mov"},
     },
     {
         //Tier Six
-        {"LeadItUp/6/a.mov"},
-        {"LeadItUp/6/b.mov"},
-        {"LeadItUp/6/c.mov"},
-        {"LeadItUp/6/d.mov"},
-        {"LeadItUp/6/e.mov"},
-        {"LeadItUp/6/f.mov"},
+        {"LeadVideos/6/a.mov"},
+        {"LeadVideos/6/b.mov"},
+        {"LeadVideos/6/c.mov"},
+        {"LeadVideos/6/d.mov"},
+        {"LeadVideos/6/e.mov"},
+        {"LeadVideos/6/f.mov"},
     },
 	};	
 }
