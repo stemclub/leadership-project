@@ -51,40 +51,43 @@ public class DownloadVideo {
 				if (count == 0) {
 					while (count2 < 1) {
 						//System.out.println(count + " " + count2);
+						System.out.print("Downloading " + DataStorage.filePaths[count][count2][0] + "... ");
 						website = new URL("https://copy.com/YuKcsyvkg96gg9DZ/" + DataStorage.filePaths[count][count2][0] + "?download");
 						ReadableByteChannel rbc = Channels.newChannel(website.openStream());
 						FileOutputStream fos = new FileOutputStream(DataStorage.filePaths[count][count2][0]);
 						fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
 						fos.close();
-						System.out.println(DataStorage.filePaths[count][count2][0]);
+						System.out.println("[Success]");
 						count2 = count2 + 1;
 					}
 				} else if (count == 1) {
 					while (count2 < 3) {
 						//System.out.println(count + " " + count2);
+						System.out.print("Downloading " + DataStorage.filePaths[count][count2][0] + "... ");
 						website = new URL("https://copy.com/YuKcsyvkg96gg9DZ/" + DataStorage.filePaths[count][count2][0] + "?download");
 						ReadableByteChannel rbc = Channels.newChannel(website.openStream());
 						FileOutputStream fos = new FileOutputStream(DataStorage.filePaths[count][count2][0]);
 						fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
 						fos.close();
-						System.out.println(DataStorage.filePaths[count][count2][0]);
+						System.out.println("[Success]");
 						count2 = count2 + 1;
 					}
 				} else {
 					while (count2 < 6) {
 						//System.out.println(count + " " + count2);
+						System.out.print("Downloading " + DataStorage.filePaths[count][count2][0] + "... ");
 						website = new URL("https://copy.com/YuKcsyvkg96gg9DZ/" + DataStorage.filePaths[count][count2][0] + "?download");
 						ReadableByteChannel rbc = Channels.newChannel(website.openStream());
 						FileOutputStream fos = new FileOutputStream(DataStorage.filePaths[count][count2][0]);
 						fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
 						fos.close();
-						System.out.println(DataStorage.filePaths[count][count2][0]);
+						System.out.println("[Success]");
 						count2 = count2 + 1;
 					}
 				}
 				count = count + 1;
 			}
-			System.out.println("Downloaded ");
+			System.out.println("Download finished.");
 			
 		}
 	}
