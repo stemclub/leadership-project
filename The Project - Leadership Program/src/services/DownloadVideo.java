@@ -10,6 +10,8 @@ import java.nio.channels.ReadableByteChannel;
 
 import javax.swing.JOptionPane;
 
+import objects.DataStorage;
+
 public class DownloadVideo {
 	public void main() throws IOException {
 		URL url = this.getClass().getProtectionDomain().getCodeSource().getLocation();
@@ -43,11 +45,46 @@ public class DownloadVideo {
 			status = new File("LeadVideos/6").mkdir();
 			System.out.println(status);
 			URL website = new URL("https://copy.com/YuKcsyvkg96gg9DZ/LeadVideos/1/a.mp4?download");
-			ReadableByteChannel rbc = Channels.newChannel(website.openStream());
-			FileOutputStream fos = new FileOutputStream("LeadVideos/1/a.mp4");
-			fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
-			fos.close();
-			System.out.println("Downloaded 1a");
+			int count = 0;
+			while (count < 6) {
+				int count2 = 0;
+				if (count == 0) {
+					while (count2 < 1) {
+						//System.out.println(count + " " + count2);
+						website = new URL("https://copy.com/YuKcsyvkg96gg9DZ/" + DataStorage.filePaths[count][count2][0] + "?download");
+						ReadableByteChannel rbc = Channels.newChannel(website.openStream());
+						FileOutputStream fos = new FileOutputStream(DataStorage.filePaths[count][count2][0]);
+						fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+						fos.close();
+						System.out.println(DataStorage.filePaths[count][count2][0]);
+						count2 = count2 + 1;
+					}
+				} else if (count == 1) {
+					while (count2 < 3) {
+						//System.out.println(count + " " + count2);
+						website = new URL("https://copy.com/YuKcsyvkg96gg9DZ/" + DataStorage.filePaths[count][count2][0] + "?download");
+						ReadableByteChannel rbc = Channels.newChannel(website.openStream());
+						FileOutputStream fos = new FileOutputStream(DataStorage.filePaths[count][count2][0]);
+						fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+						fos.close();
+						System.out.println(DataStorage.filePaths[count][count2][0]);
+						count2 = count2 + 1;
+					}
+				} else {
+					while (count2 < 6) {
+						//System.out.println(count + " " + count2);
+						website = new URL("https://copy.com/YuKcsyvkg96gg9DZ/" + DataStorage.filePaths[count][count2][0] + "?download");
+						ReadableByteChannel rbc = Channels.newChannel(website.openStream());
+						FileOutputStream fos = new FileOutputStream(DataStorage.filePaths[count][count2][0]);
+						fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+						fos.close();
+						System.out.println(DataStorage.filePaths[count][count2][0]);
+						count2 = count2 + 1;
+					}
+				}
+				count = count + 1;
+			}
+			System.out.println("Downloaded ");
 			
 		}
 	}
