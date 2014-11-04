@@ -3,6 +3,7 @@ package services;
 import java.io.IOException;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 import objects.DataStorage;
 import objects.Tier;
@@ -17,14 +18,18 @@ public class TestSave {
 		n.initializeArrays();
 		n.setTierDone(0, 0, 'a', n);
 		n.nextEventToBeDone();
-		Updater updater = new Updater();
-		updater.main();
-		//FXMediaPlayer player = new FXMediaPlayer();
-		//JFrame frame = player.main(args);
-		//Thread.sleep(5000);
-		//frame.setVisible(false);
-		//frame.dispose();
-		//System.out.println(DataStorage.filePaths[1][1][0]);
-		WriteSave.saveData(n);
+		if (INetTest.main()) {
+			Updater updater = new Updater();
+			updater.main();
+			//FXMediaPlayer player = new FXMediaPlayer();
+			//JFrame frame = player.main(args);
+			//Thread.sleep(5000);
+			//frame.setVisible(false);
+			//frame.dispose();
+			//System.out.println(DataStorage.filePaths[1][1][0]);
+			WriteSave.saveData(n);
+		} else {
+			JOptionPane.showMessageDialog(null, "The internet connection appears to be offline. Please click OK, connect to the internet, and then relaunch LeadItUp.", "Network Error", JOptionPane.PLAIN_MESSAGE);
+		}
 	}
 }
