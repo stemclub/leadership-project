@@ -7,6 +7,7 @@ import javax.swing.JOptionPane;
 
 import objects.DataStorage;
 import objects.Tier;
+import uiInterface.ChoicesUI;
 import uiInterface.FXMediaPlayer;
 
 public class TestSave {
@@ -20,13 +21,16 @@ public class TestSave {
 		n.nextEventToBeDone();
 		Updater updater = new Updater();
 		if (updater.main()) {
-			//FXMediaPlayer player = new FXMediaPlayer();
-			//JFrame frame = player.main(args);
-			//Thread.sleep(5000);
-			//frame.setVisible(false);
-			//frame.dispose();
-			//System.out.println(DataStorage.filePaths[1][1][0]);
 			WriteSave.saveData(n);
+			FXMediaPlayer player = new FXMediaPlayer();
+			JFrame frame = player.main(args);
+			Thread.sleep(5000);
+			frame.setVisible(false);
+			frame.dispose();
+			System.out.println(DataStorage.filePaths[1][1][0]);
 		}
+		ChoicesUI testing = new ChoicesUI();
+		ChoicesUI.runUI(testing);
 	}
 }
+	
