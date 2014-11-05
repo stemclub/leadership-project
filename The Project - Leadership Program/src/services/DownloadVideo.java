@@ -11,7 +11,6 @@ import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 
 import javax.swing.JOptionPane;
-
 import objects.DataStorage;
 
 public class DownloadVideo {
@@ -136,7 +135,6 @@ public class DownloadVideo {
 			fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
 			fos.close();
 			System.out.println("[Success]");
-			System.out.println("Download finished.");
 		} catch (IOException e) {
 			System.out.println("[Fail]");
 			JOptionPane.showMessageDialog(null, "Error with video download. We're not sure what happened.", "Error", JOptionPane.PLAIN_MESSAGE);
