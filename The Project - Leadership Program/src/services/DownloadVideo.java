@@ -77,6 +77,7 @@ public class DownloadVideo {
 				System.out.println("[Fail]");
 			}
 		count3 = count3 + 1;
+		}
 		URL website = new URL("https://copy.com/YuKcsyvkg96gg9DZ/LeadVideos/1/a.mp4?download");
 		try {
 			int count = 0;
@@ -141,7 +142,6 @@ public class DownloadVideo {
 			JOptionPane.showMessageDialog(null, "Error with video download. We're not sure what happened.", "Error", JOptionPane.PLAIN_MESSAGE);
 			return false;
 		}
-	}
 		return true;
 }
 }
