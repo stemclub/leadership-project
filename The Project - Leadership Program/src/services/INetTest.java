@@ -21,12 +21,10 @@ public class INetTest {
 
         } catch (UnknownHostException e) {
             // TODO Auto-generated catch block
-            e.printStackTrace();
             return false;
         }
         catch (IOException e) {
             // TODO Auto-generated catch block
-            e.printStackTrace();
             return false;
         }
         return true;
