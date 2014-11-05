@@ -137,6 +137,7 @@ public class DownloadVideo {
 			System.out.println("[Success]");
 			System.out.println("Download finished.");
 		} catch (IOException e) {
+			System.out.println("[Fail]");
 			JOptionPane.showMessageDialog(null, "Error with video download. We're not sure what happened.", "Error", JOptionPane.PLAIN_MESSAGE);
 			return false;
 		}
