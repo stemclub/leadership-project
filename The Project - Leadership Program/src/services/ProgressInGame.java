@@ -71,6 +71,7 @@ public class ProgressInGame {
 	public int[] nextEventToBeDone(){
 		if(tiersFinished[0] == false){
 			int[] returning = {0,0};
+			System.out.println(returning[1] + returning[0]);
 			return returning;
 		}
 		else if(tiersFinished[1] == false){

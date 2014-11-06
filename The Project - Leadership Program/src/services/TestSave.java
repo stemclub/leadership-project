@@ -17,17 +17,12 @@ public class TestSave {
         Tier test = new Tier();
 		n.restartGame();
 		n.initializeArrays();
-		n.setTierDone(0, 0, 'a', n);
-		n.nextEventToBeDone();
 		Updater updater = new Updater();
 		if (updater.main()) {
 			WriteSave.saveData(n);
-			FXMediaPlayer player = new FXMediaPlayer();
-			JFrame frame = player.main(args);
-			Thread.sleep(5000);
-			frame.setVisible(false);
-			frame.dispose();
-			System.out.println(DataStorage.filePaths[1][1][0]);
+			Tier testTier = new Tier(0,0);
+			testTier.initializeEvents();
+			testTier.openVideo(n);
 		}
 		ChoicesUI testing = new ChoicesUI();
 		ChoicesUI.runUI(testing);

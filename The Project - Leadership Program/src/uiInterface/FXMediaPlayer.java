@@ -63,7 +63,7 @@ public class FXMediaPlayer{
         panel.setScene(scene);
     }
  
-    public JFrame main(String[] args) {
+    public JFrame main() {
     	URL url = this.getClass().getProtectionDomain().getCodeSource().getLocation();
     	logger.info(url.getFile());
     	JFrame jFrame = new JFrame("LeadItUp");
