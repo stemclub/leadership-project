@@ -11,7 +11,7 @@ import uiInterface.ChoicesUI;
 import uiInterface.FXMediaPlayer;
 
 public class TestSave {
-	public static void main(String[]args) throws IOException, InterruptedException{
+	public static void main() throws IOException, InterruptedException{
 		//Tests a save! The title doesn't tell you anything about this file...
         ProgressInGame n = new ProgressInGame();
         Tier test = new Tier();
@@ -23,9 +23,9 @@ public class TestSave {
 			Tier testTier = new Tier(0,0);
 			testTier.initializeEvents();
 			testTier.openVideo(n);
+			ChoicesUI testing = new ChoicesUI();
+			ChoicesUI.runUI(testing);
 		}
-		ChoicesUI testing = new ChoicesUI();
-		ChoicesUI.runUI(testing);
 	}
 }
 	
