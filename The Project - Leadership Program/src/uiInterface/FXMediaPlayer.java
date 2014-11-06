@@ -16,6 +16,23 @@ import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
 public class FXMediaPlayer{
+	private String mediaURLInput, binMediaURLInput;
+	public String getMediaURLInput() {
+		return mediaURLInput;
+	}
+
+	public void setMediaURLInput(String mediaURLInput) {
+		this.mediaURLInput = mediaURLInput;
+	}
+
+	public String getBinMediaURLInput() {
+		return binMediaURLInput;
+	}
+
+	public void setBinMediaURLInput(String binMediaURLInput) {
+		this.binMediaURLInput = binMediaURLInput;
+	}
+
 	final static Logger logger = Logger.getLogger("test");
     //private static final String MEDIA_URL = "file:///Volumes/Eddie%20Li%202/STEM%20Club/Videos/LeadItUp/1/a.mp4";
 	//private static final String MEDIA_URL = "";
@@ -29,11 +46,11 @@ public class FXMediaPlayer{
         URL url = this.getClass().getProtectionDomain().getCodeSource().getLocation();
         int index = url.getFile().lastIndexOf("/");
         String path = url.getFile().substring(0, index);
-        String mediaURL = "file://" + path + "/LeadVideos/1/a.mp4";
+        String mediaURL = "file://" + path + mediaURLInput;
         if(path.endsWith("bin")) {
         	int index2 = path.lastIndexOf("/");
         	path = path.substring(0,  index2);
-        	mediaURL = "file://" + path + "/Videos/1/a.mp4";
+        	mediaURL = "file://" + path + binMediaURLInput;
         }
         Media media = new Media(mediaURL);
         MediaPlayer mediaPlayer = new MediaPlayer(media);

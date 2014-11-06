@@ -1,10 +1,9 @@
 package objects;
 
-import java.awt.Desktop;
-import java.io.File;
 import java.io.IOException;
 
 import services.ProgressInGame;
+import uiInterface.FXMediaPlayer;
 
 public class Tier {
 	private int tierNumber;
@@ -14,7 +13,8 @@ public class Tier {
 	
 	public void initializeEvents(){
 		for(int x = 0; x < numberOfEvents; x++){
-			Event newEvent = new Event(DataStorage.filePaths[tierNumber][x], tierNumber, x);
+			String string = DataStorage.filePaths[tierNumber][x];
+			Event newEvent = new Event(string , tierNumber, x);
 			events[x] = newEvent;
 		} 
 	}
@@ -22,7 +22,12 @@ public class Tier {
 	public void openVideo(ProgressInGame n) throws IOException{
 		int[] d = n.nextEventToBeDone();
 		String h = events[d[2]].getVideoPath();
-		Desktop.getDesktop().open(new File("C:/Users/shalin/Videos/Movies/Home_Alone/Home_Alone_4_[DVDRip][2002][Eng].avi"));
+		h = "/" + h;
+		FXMediaPlayer player = new FXMediaPlayer();
+		player.setMediaURLInput(h);
+		String g = h.substring(11);
+		g = "/Videos" + g;
+		player.setBinMediaURLInput(g);
 		
 	}
 

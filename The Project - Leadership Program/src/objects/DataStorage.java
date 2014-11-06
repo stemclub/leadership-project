@@ -41,52 +41,52 @@ public class DataStorage {
 		}
 	};
 	
-	public static String[][][] filePaths = {
+	public static String[][] filePaths = {
     {
         //Tier One
-		{"LeadVideos/1/a.mp4"},
+		"LeadVideos/1/a.mp4",
     },
     {
         //Tier Two
-		{"LeadVideos/2/a.mp4"},
-        {"LeadVideos/2/b.mp4"},
-        {"LeadVideos/2/c.mp4"},
+		"LeadVideos/2/a.mp4",
+        "LeadVideos/2/b.mp4",
+        "LeadVideos/2/c.mp4",
     },
     {
         //Tier Three
-        {"LeadVideos/3/a.mp4"},
-        {"LeadVideos/3/b.mp4"},
-        {"LeadVideos/3/c.mp4"},
-        {"LeadVideos/3/d.mp4"},
-        {"LeadVideos/3/e.mp4"},
-        {"LeadVideos/3/f.mp4"},
+        "LeadVideos/3/a.mp4",
+        "LeadVideos/3/b.mp4",
+        "LeadVideos/3/c.mp4",
+        "LeadVideos/3/d.mp4",
+        "LeadVideos/3/e.mp4",
+        "LeadVideos/3/f.mp4",
     },
     {
         //Tier Four
-        {"LeadVideos/4/a.mp4"},
-        {"LeadVideos/4/b.mp4"},
-        {"LeadVideos/4/c.mp4"},
-        {"LeadVideos/4/d.mp4"},
-        {"LeadVideos/4/e.mp4"},
-        {"LeadVideos/4/f.mp4"},
+        "LeadVideos/4/a.mp4",
+        "LeadVideos/4/b.mp4",
+        "LeadVideos/4/c.mp4",
+        "LeadVideos/4/d.mp4",
+        "LeadVideos/4/e.mp4",
+        "LeadVideos/4/f.mp4",
     },
     {
         //Tier Five
-        {"LeadVideos/5/a.mp4"},
-        {"LeadVideos/5/b.mp4"},
-        {"LeadVideos/5/c.mp4"},
-        {"LeadVideos/5/d.mp4"},
-        {"LeadVideos/5/e.mp4"},
-        {"LeadVideos/5/f.mp4"},
+        "LeadVideos/5/a.mp4",
+        "LeadVideos/5/b.mp4",
+        "LeadVideos/5/c.mp4",
+        "LeadVideos/5/d.mp4",
+        "LeadVideos/5/e.mp4",
+        "LeadVideos/5/f.mp4",
     },
     {
         //Tier Six
-        {"LeadVideos/6/a.mp4"},
-        {"LeadVideos/6/b.mp4"},
-        {"LeadVideos/6/c.mp4"},
-        {"LeadVideos/6/d.mp4"},
-        {"LeadVideos/6/e.mp4"},
-        {"LeadVideos/6/f.mp4"},
+        "LeadVideos/6/a.mp4",
+        "LeadVideos/6/b.mp4",
+        "LeadVideos/6/c.mp4",
+        "LeadVideos/6/d.mp4",
+        "LeadVideos/6/e.mp4",
+        "LeadVideos/6/f.mp4",
     },
 	};	
 }
