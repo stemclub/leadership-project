@@ -6,6 +6,9 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import java.awt.Button;
+import java.awt.Color;
+import javax.swing.JInternalFrame;
 
 public class ChoicesUI extends JFrame{
 	private JButton Choice1 = new JButton("Choice 1");
@@ -18,19 +21,20 @@ public class ChoicesUI extends JFrame{
 	private ButtonListener listener = new ButtonListener();
 	
 	public ChoicesUI(){
+		Choice1.setBackground(Color.ORANGE);
 		ChoicesPanel.add(Choice1);
+		Choice1.addActionListener(listener);
 		ChoicesPanel.add(Choice2);
+		Choice2.addActionListener(listener);
 		ChoicesPanel.add(Choice3);
 		ChoicesPanel.add(ReplayVideo);
-		Choice1.addActionListener(listener);
-		Choice2.addActionListener(listener);
-		Choice3.addActionListener(listener);
 		ReplayVideo.addActionListener(listener);
+		Choice3.addActionListener(listener);
 	}
 	
 	public static void runUI(ChoicesUI x){
 		JFrame frame = new JFrame();
-		frame.add(ChoicesPanel);
+		frame.getContentPane().add(ChoicesPanel);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 400);
         frame.setVisible(true);	
