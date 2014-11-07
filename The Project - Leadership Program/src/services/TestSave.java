@@ -2,13 +2,9 @@ package services;
 
 import java.io.IOException;
 
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-
-import objects.DataStorage;
 import objects.Tier;
 import uiInterface.ChoicesUI;
-import uiInterface.FXMediaPlayer;
+import uiInterface.RunUI;
 
 public class TestSave {
 	public static void main() throws IOException, InterruptedException{
@@ -22,9 +18,8 @@ public class TestSave {
 			WriteSave.saveData(n);
 			Tier testTier = new Tier(0,0);
 			testTier.initializeEvents();
-			testTier.openVideo(n);
-			ChoicesUI testing = new ChoicesUI();
-			ChoicesUI.runUI(testing);
+			RunUI hi = new RunUI();
+			testTier.openVideo(n, hi);
 		}
 	}
 }

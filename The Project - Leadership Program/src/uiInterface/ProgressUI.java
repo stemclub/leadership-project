@@ -1,5 +1,7 @@
 package uiInterface;
 
-public class ProgressUI {
+import java.awt.Component;
+
+public class ProgressUI extends Component{
 
 }

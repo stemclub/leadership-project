@@ -1,16 +1,15 @@
 package uiInterface;
 
+import java.awt.Color;
+import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import java.awt.Button;
-import java.awt.Color;
-import javax.swing.JInternalFrame;
 
-public class ChoicesUI extends JFrame{
+public class ChoicesUI extends Component{
 	private JButton Choice1 = new JButton("Choice 1");
 	private JButton Choice2 = new JButton("Choice 2");
 	private JButton Choice3 = new JButton("Choice 3");
