@@ -1,6 +1,8 @@
 package services;
 
+import java.awt.HeadlessException;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -11,9 +13,20 @@ import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 
 import javax.swing.JOptionPane;
+
 import objects.DataStorage;
 
 public class DownloadVideo {
+	public static boolean deleteRecursive(File path) throws FileNotFoundException{
+        if (!path.exists()) throw new FileNotFoundException(path.getAbsolutePath());
+        boolean ret = true;
+        if (path.isDirectory()){
+            for (File f : path.listFiles()){
+                ret = ret && deleteRecursive(f);
+            }
+        }
+        return ret && path.delete();
+    }
 	public boolean checkFolder() {
 		URL url = this.getClass().getProtectionDomain().getCodeSource().getLocation();
         int index = url.getFile().lastIndexOf("/");
@@ -40,7 +53,7 @@ public class DownloadVideo {
         	return false;
         }
 	}
-	public boolean main() throws MalformedURLException {
+	public boolean main() throws MalformedURLException, HeadlessException, FileNotFoundException {
 		URL url = this.getClass().getProtectionDomain().getCodeSource().getLocation();
         int index = url.getFile().lastIndexOf("/");
         String path = url.getFile().substring(0, index);
@@ -137,7 +150,14 @@ public class DownloadVideo {
 			System.out.println("[Success]");
 		} catch (IOException e) {
 			System.out.println("[Fail]");
-			JOptionPane.showMessageDialog(null, "Error with video download. We're not sure what happened.", "Error", JOptionPane.PLAIN_MESSAGE);
+			System.out.print("Deleting directory... ");
+			if (deleteRecursive(f)) {
+				System.out.println("[Success]");
+				JOptionPane.showMessageDialog(null, "Error with video download. Check your internet connection and relaunch LeadItUp.", "Error", JOptionPane.PLAIN_MESSAGE);
+			} else {
+				System.out.println("[Fail]");
+				JOptionPane.showMessageDialog(null, "Error with video download. Please delete:" + finalPath + ", check your internet connection, and relaunch LeadItUp.", "Error", JOptionPane.PLAIN_MESSAGE);
+			}
 			return false;
 		}
 		return true;
