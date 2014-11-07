@@ -74,7 +74,7 @@ public class DownloadVideo {
 		}
         System.out.println(finalPath);
         File f = new File(finalPath);
-		System.out.println("Not found. Creating.");
+		System.out.println("Downloading Videos:");
 		JOptionPane.showMessageDialog(null, "Videos need to be downloaded. This may take a while on a slow internet connection. Click OK to continue.", "Video Download", JOptionPane.PLAIN_MESSAGE);
 		f.mkdirs();
 		System.out.println("Created LeadVideos directory");
