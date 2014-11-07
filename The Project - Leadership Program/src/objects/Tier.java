@@ -25,7 +25,7 @@ public class Tier {
 	
 	public void openVideo(ProgressInGame n, RunUI UI) throws IOException{
 		int d = n.nextEventToBeDone()[1];
-		System.out.println(d);
+		//System.out.println(d);
 		String h = events[d].getVideoPath();
 		h = "/" + h;
 		FXMediaPlayer player = new FXMediaPlayer();
@@ -42,7 +42,6 @@ public class Tier {
 		}
 		frame.setVisible(false);
 		frame.dispose();
-		System.out.println(DataStorage.filePaths[1][1]);
 		ChoicesUI choicePane = new ChoicesUI();
 		UI.TabUIBuilder("Choices", choicePane);
 	}

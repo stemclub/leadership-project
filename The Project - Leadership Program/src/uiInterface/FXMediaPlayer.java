@@ -65,7 +65,7 @@ public class FXMediaPlayer{
  
     public JFrame main() {
     	URL url = this.getClass().getProtectionDomain().getCodeSource().getLocation();
-    	logger.info(url.getFile());
+    	//logger.info(url.getFile());
     	JFrame jFrame = new JFrame("LeadItUp");
         SwingUtilities.invokeLater(new Runnable() {
  
