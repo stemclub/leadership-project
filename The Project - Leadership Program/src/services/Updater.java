@@ -6,6 +6,8 @@ import javax.swing.JOptionPane;
 
 public class Updater {
 	public boolean update() {
+		System.out.print("Checking for updates to LeadItUp... ");
+		System.out.println("[Update class unfinished]");
 		return true;
 	}
 	public boolean main() throws IOException {

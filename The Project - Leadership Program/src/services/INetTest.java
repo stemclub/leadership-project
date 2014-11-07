@@ -9,6 +9,7 @@ public class INetTest {
 	public static boolean main()
     {
 		try {
+			System.out.print("Checking for internet connection... ");
             //make a URL to a known source
             URL url = new URL("http://www.google.com");
 
@@ -21,12 +22,15 @@ public class INetTest {
 
         } catch (UnknownHostException e) {
             // TODO Auto-generated catch block
+        	System.out.println("[Connection Err]");
             return false;
         }
         catch (IOException e) {
             // TODO Auto-generated catch block
+        	System.out.println("[Connection Err]");
             return false;
         }
+		System.out.println("[Success]");
         return true;
     }
 }

@@ -9,13 +9,15 @@ import java.io.IOException;
 public class WriteSave {
 	public static void saveData(ProgressInGame thisIsIt){
 		try {	
+			System.out.print("Saving progress... ");
+			
 			//Make new instance of file
             File file = new File("Progress.lead");
 	
 			//Delete file first
             file.delete();
 	
-			//If file doesn't exist, then create it. Yay.
+			//If file doesn't exist, then create it. Yay!
 			if (!file.exists()) {
 				file.createNewFile();
 			}			
@@ -48,12 +50,12 @@ public class WriteSave {
 			}
 			//Closes BufferedWriter
             bw.close();
-			System.out.println("Updated...[success]");
+			System.out.println("[Success]");
 		} 
 		//Exception catching service. Don't you just love exceptions?
         catch (IOException e) {
+			System.out.println("[Fail]");
 			e.printStackTrace();
-			System.out.println("Write IOException " + e + "...[fail]");
 		}	
 	}
 }

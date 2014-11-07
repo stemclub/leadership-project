@@ -61,10 +61,11 @@ public class ProgressInGame {
 	
     //Restarts game when needed
 	public void restartGame(){
+		System.out.print("Restarting game... ");
 		for(int t = 0; t<=4; t++){
 			tiersFinished[t] = false;
 		}
-		System.out.println("Restarting...[success]");
+		System.out.println("[Success]");
 	}
 	
     //Calculates next event to be done when needed
