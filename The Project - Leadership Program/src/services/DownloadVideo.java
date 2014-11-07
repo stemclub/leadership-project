@@ -45,7 +45,7 @@ public class DownloadVideo {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-        System.out.println(finalPath);
+        //System.out.println(finalPath);
         File f = new File(finalPath);
         if (f.exists()) {
         	return true;
@@ -72,7 +72,7 @@ public class DownloadVideo {
 			e.printStackTrace();
 			return false;
 		}
-        System.out.println(finalPath);
+        //System.out.println(finalPath);
         File f = new File(finalPath);
 		System.out.println("Downloading Videos:");
 		JOptionPane.showMessageDialog(null, "Videos need to be downloaded. This may take a while on a slow internet connection. Click OK to continue.", "Video Download", JOptionPane.PLAIN_MESSAGE);
