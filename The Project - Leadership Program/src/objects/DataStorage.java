@@ -1,6 +1,9 @@
 package objects;
 
+import uiInterface.RunUI;
+
 public class DataStorage {
+	public static RunUI hi = new RunUI();
 	public static int scores[][][] = {
 		{
             //Tier One

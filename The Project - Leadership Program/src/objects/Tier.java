@@ -42,8 +42,8 @@ public class Tier {
 		}
 		frame.setVisible(false);
 		frame.dispose();
-		//ChoicesUI choicePane = new ChoicesUI();
-		//choicePane.runUI();
+		char choice = ChoicesUI.choice;
+		n.setTierDone(tierNumber, d, choice, n);
 	}
 
 	public Tier(int tierNumber, int numberOfEvents) {

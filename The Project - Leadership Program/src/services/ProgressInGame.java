@@ -57,6 +57,7 @@ public class ProgressInGame {
 		else if(Tier == 4){
 			tiers[Tier][Event] = Choice;
 		}
+		WriteSave.saveData(n);
 	}
 	
     //Restarts game when needed
