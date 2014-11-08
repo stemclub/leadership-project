@@ -43,7 +43,7 @@ public class Tier {
 		frame.setVisible(false);
 		frame.dispose();
 		ChoicesUI choicePane = new ChoicesUI();
-		choicePane.RunUI();
+		choicePane.runUI();
 	}
 
 	public Tier(int tierNumber, int numberOfEvents) {
