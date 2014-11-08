@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 public class Updater {
 	public boolean update() {
 		System.out.print("Checking for updates to LeadItUp... ");
-		String version = "0.1 Alpha";
+		String version = "0.11 Alpha";
 		//System.out.println(version);
 		try {
 			// Create a URL for the desired page

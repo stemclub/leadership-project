@@ -1,7 +1,13 @@
 package uiInterface;
 
-import java.awt.Component;
+import javax.swing.JPanel;
+import javax.swing.JLabel;
 
-public class ProgressUI extends Component{
+public class ProgressUI extends JPanel{
+	public ProgressUI() {
+		
+		JLabel lblHiWelcomeTo = new JLabel("Hi! Welcome to LeadItUp!");
+		add(lblHiWelcomeTo);
+	}
 
 }

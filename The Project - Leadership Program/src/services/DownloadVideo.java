@@ -158,6 +158,7 @@ public class DownloadVideo {
 				System.out.println("[Fail]");
 				JOptionPane.showMessageDialog(null, "Error with video download. Please delete:" + finalPath + ", check your internet connection, and relaunch LeadItUp.", "Error", JOptionPane.PLAIN_MESSAGE);
 			}
+			e.printStackTrace();
 			return false;
 		}
 		return true;
