@@ -46,23 +46,15 @@ public class ProgressInGame {
 			tiers[Tier][Event] = Choice;
 		}
 		else if(Tier == 1){
-			char[] a = {'z','z','z'};
-			tiers[Tier] = a;
 			tiers[Tier][Event] = Choice;
 		}
 		else if(Tier == 2){
-			char[] a = {'z','z','z','z','z','z'};
-			tiers[Tier] = a;
 			tiers[Tier][Event] = Choice;
 		}
 		else if(Tier == 3){
-			char[] a = {'z','z','z','z','z','z'};
-			tiers[Tier] = a;
 			tiers[Tier][Event] = Choice;
 		}
 		else if(Tier == 4){
-			char[] a = {'z','z','z','z','z','z'};
-			tiers[Tier] = a;
 			tiers[Tier][Event] = Choice;
 		}
 		WriteSave.saveData(n);

@@ -22,6 +22,37 @@ public class ReadFile {
 			}
 			tiersFinished[x] = enter;
 		}
-		reader.
+		String char1 = reader.nextLine();
+		char[] chars1 = new char[1];
+		chars1[0] = char1.charAt(0);
+		n.setTierOne(chars1);
+		
+		String char2 = reader.nextLine();
+		char[] chars2 = new char[3];
+		for(int x = 0; x<3; x++){
+			chars2[x] = char2.charAt(x);
+		}
+		n.setTierTwo(chars2);
+		
+		String char3 = reader.nextLine();
+		char[] chars3 = new char[6];
+		for(int x = 0; x<6; x++){
+			chars3[x] = char3.charAt(x);
+		}
+		n.setTierThree(chars3);
+		
+		String char4 = reader.nextLine();
+		char[] chars4 = new char[6];
+		for(int x = 0; x<6; x++){
+			chars3[x] = char4.charAt(x);
+		}
+		n.setTierFour(chars4);
+		
+		String char5 = reader.nextLine();
+		char[] chars5 = new char[6];
+		for(int x = 0; x<6; x++){
+			chars3[x] = char5.charAt(x);
+		}
+		n.setTierFive(chars5);
 	}
 }
