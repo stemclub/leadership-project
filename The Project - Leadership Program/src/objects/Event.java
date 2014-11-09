@@ -7,17 +7,6 @@ public class Event {
 	private int scoreForRound;
 	private int tier;
 	private int eventNumber;
-	
-	private void makeScore(){
-		for(int x = 0; x <= choices.length; x++){
-			if(!(choices[x] == 'z')){
-				scoreForRound = DataStorage.scores[tier][eventNumber][x];
-			}
-			else{
-				System.out.println("No score for this round.");
-			}
-		}
-	}
 
 	public String getVideoPath() {
 		return videoPath;

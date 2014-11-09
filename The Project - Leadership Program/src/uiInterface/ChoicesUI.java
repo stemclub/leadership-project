@@ -9,6 +9,10 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import objects.DataStorage;
+import objects.Tier;
+import services.ProgressInGame;
+
 public class ChoicesUI extends JPanel{
 	/**
 	 * 
@@ -22,6 +26,11 @@ public class ChoicesUI extends JPanel{
 	public static char choice;
 	private boolean replayVideo;
 	private ButtonListener listener = new ButtonListener();
+	public static Tier Tier;
+	
+	private int tier;
+	private ProgressInGame n;
+	private int event;
 	
 	public ChoicesUI(){
 		GridLayout theLayout = new GridLayout(2,2,50,50);
@@ -76,6 +85,12 @@ public class ChoicesUI extends JPanel{
 			else if(arg0.getSource() == ReplayVideo){
 				replayVideo = true;
 			}
+			n.setTierDone(tier, event, choice, n);
+			System.out.println(Tier.getTierNumber()+1);
+			System.out.println(DataStorage.filePaths[Tier.getTierNumber()+1].length);
+			Tier newTier = new Tier(Tier.getTierNumber()+1, DataStorage.filePaths[Tier.getTierNumber()+1].length);
+			Tier = newTier;
+			ProgressUI.Tier = newTier;
 			System.out.println(choice);
 			System.out.println(replayVideo);
 		}
@@ -92,4 +107,30 @@ public class ChoicesUI extends JPanel{
 	public void setListener(ButtonListener listener) {
 		this.listener = listener;
 	}
+
+	public int getTier() {
+		return tier;
+	}
+
+	public void setTier(int tier) {
+		this.tier = tier;
+	}
+
+	public ProgressInGame getN() {
+		return n;
+	}
+
+	public void setN(ProgressInGame n) {
+		this.n = n;
+	}
+
+	public int getEvent() {
+		return event;
+	}
+
+	public void setEvent(int event) {
+		this.event = event;
+	}
+	
+	
 }

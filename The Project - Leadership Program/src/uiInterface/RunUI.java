@@ -10,7 +10,7 @@ import javax.swing.JTabbedPane;
 public class RunUI extends JFrame{
 	private JTabbedPane mainView = new JTabbedPane();
 	private ProgressUI homeScreen = new ProgressUI();
-	private ChoicesUI choicesScreen = new ChoicesUI();
+	public static ChoicesUI choicesScreen = new ChoicesUI();
 	JFrame frame = new JFrame();
 	
 	public RunUI(){

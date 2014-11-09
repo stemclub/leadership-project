@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import objects.DataStorage;
 import objects.Tier;
+import uiInterface.ChoicesUI;
+import uiInterface.ProgressUI;
 import uiInterface.RunUI;
 
 public class TestSave {
@@ -12,12 +14,14 @@ public class TestSave {
         ProgressInGame n = new ProgressInGame();
 		n.restartGame();
 		n.initializeArrays();
+		WriteSave.saveData(n);
 		Updater updater = new Updater();
 		if (updater.main()) {
 			WriteSave.saveData(n);
-			Tier testTier = new Tier(0,0);
-			testTier.initializeEvents();
-			testTier.openVideo(n, DataStorage.hi);
+			Tier Tier = new Tier(0,1);
+			Tier.initializeEvents();
+			ProgressUI.Tier = Tier;
+			ChoicesUI.Tier = Tier;
 		}
 	}
 }

@@ -16,7 +16,7 @@ import services.ProgressInGame;
 public class ProgressUI extends JPanel{
 	private final JLabel scoreLead = new JLabel("Your Score:");
 	private final JLabel score = new JLabel("Score");
-	private final Tier testTier = new Tier(0,0);
+	public static Tier Tier;
 	private final ProgressInGame n = new ProgressInGame();
 	public ProgressUI() {
 		setLayout(new GridLayout(0, 1, 0, 0));
@@ -33,8 +33,9 @@ public class ProgressUI extends JPanel{
 		play.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					testTier.initializeEvents();
-					testTier.openVideo(n, DataStorage.hi);
+					System.out.println(Tier.getTierNumber());
+					Tier.initializeEvents();
+					Tier.openVideo(n, DataStorage.hi);
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
@@ -42,6 +43,12 @@ public class ProgressUI extends JPanel{
 			}
 		});
 		add(play);
+	}
+	public Tier getTier() {
+		return Tier;
+	}
+	public void setTier(Tier tier) {
+		Tier = tier;
 	}
 
 }
