@@ -58,6 +58,7 @@ public class Tier {
 		g = "/Videos" + g;
 		player.setBinMediaURLInput(g);
 		JFrame frame = player.main();
+		/*
 		try {
 			Thread.sleep(1000 * (DataStorage.times[tierNumber][d]+15));
 		} catch (InterruptedException e) {
@@ -65,7 +66,7 @@ public class Tier {
 			e.printStackTrace();
 		}
 		frame.setVisible(false);
-		frame.dispose();
+		frame.dispose();*/
 		RunUI.choicesScreen.setN(n);
 		RunUI.choicesScreen.setTier(tierNumber);
 		RunUI.choicesScreen.setEvent(d);
