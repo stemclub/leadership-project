@@ -59,7 +59,7 @@ public class Tier {
 		player.setBinMediaURLInput(g);
 		JFrame frame = player.main();
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(1000 * (DataStorage.times[tierNumber][d]+15));
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

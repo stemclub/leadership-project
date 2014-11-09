@@ -4,6 +4,15 @@ import uiInterface.RunUI;
 
 public class DataStorage {
 	public static RunUI hi = new RunUI();
+	public static int times[][] = {
+		{34},
+		{42,40,50},
+		{55,49,45,51,55,57},
+		{61,59,62,66,54,46},
+		{40,37,56,32,42,56},
+		{12,18,18,15,19,13},
+		{29,12}
+	};
 	public static int scores[][][] = {
 		{
             //Tier One
