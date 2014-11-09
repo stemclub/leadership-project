@@ -11,10 +11,12 @@ public class ReadFile {
 		@SuppressWarnings("resource")
 		Scanner reader = new Scanner(progress);
 		boolean[] tiersFinished = new boolean[5];
+		String tierDone = reader.next();
+		System.out.println(tierDone);
 		for(int x = 0; x < 5; x++){
-			int tierDone = reader.nextInt();
+			int isTierDone = (int)tierDone.charAt(x);
 			boolean enter;
-			if(tierDone == 0){
+			if(isTierDone == 0){
 				enter = false;
 			}
 			else{
@@ -22,7 +24,8 @@ public class ReadFile {
 			}
 			tiersFinished[x] = enter;
 		}
-		String char1 = reader.nextLine();
+		String char1 = reader.next();
+		System.out.println(char1);
 		char[] chars1 = new char[1];
 		chars1[0] = char1.charAt(0);
 		n.setTierOne(chars1);
