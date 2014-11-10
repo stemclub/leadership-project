@@ -1,5 +1,6 @@
 package uiInterface;
 
+import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import java.net.URLDecoder;
 import java.util.logging.Logger;
@@ -67,27 +68,28 @@ public class FXMediaPlayer{
     	URL url = this.getClass().getProtectionDomain().getCodeSource().getLocation();
     	//logger.info(url.getFile());
     	JFrame jFrame = new JFrame("LeadItUp");
-        SwingUtilities.invokeLater(new Runnable() {
+
+			SwingUtilities.invokeLater(new Runnable() {
  
-            @Override
-            public void run() {
-                jFrame.setSize(1280, 720);
-                jFrame.setVisible(true);
-                jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                 
-                final JFXPanel jFXPanel = new JFXPanel();
-                jFrame.add(jFXPanel);
-                 
-                Platform.runLater(new Runnable(){
-         
-                    @Override
-                    public void run() {
-                        initFxLater(jFXPanel);
-                    }
-                });
-            }
-             
-        });
+			    @Override
+			    public void run() {
+			        jFrame.setSize(1280, 720);
+			        jFrame.setVisible(true);
+			        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			         
+			        final JFXPanel jFXPanel = new JFXPanel();
+			        jFrame.add(jFXPanel);
+			         
+			        Platform.runLater(new Runnable(){
+			 
+			            @Override
+			            public void run() {
+			                initFxLater(jFXPanel);
+			            }
+			        });
+			    }
+			     
+			});
         return jFrame;
     }
 }

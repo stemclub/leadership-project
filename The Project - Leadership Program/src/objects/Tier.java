@@ -5,6 +5,7 @@ import java.io.IOException;
 import javax.swing.JFrame;
 
 import services.ProgressInGame;
+import services.Timer;
 import uiInterface.FXMediaPlayer;
 import uiInterface.RunUI;
 
@@ -58,15 +59,14 @@ public class Tier {
 		g = "/Videos" + g;
 		player.setBinMediaURLInput(g);
 		JFrame frame = player.main();
-		/*
+		
 		try {
 			Thread.sleep(1000 * (DataStorage.times[tierNumber][d]+15));
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		frame.setVisible(false);
-		frame.dispose();*/
+		(new Timer(tierNumber, d, frame)).run();
 		RunUI.choicesScreen.setN(n);
 		RunUI.choicesScreen.setTier(tierNumber);
 		RunUI.choicesScreen.setEvent(d);
