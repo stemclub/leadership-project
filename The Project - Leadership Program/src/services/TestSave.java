@@ -14,6 +14,7 @@ public class TestSave {
         ProgressInGame n = new ProgressInGame();
 		n.restartGame();
 		n.initializeArrays();
+		ReadFile.read(n);
 		WriteSave.saveData(n);
 		Updater updater = new Updater();
 		if (updater.main()) {

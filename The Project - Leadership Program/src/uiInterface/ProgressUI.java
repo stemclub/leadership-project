@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
@@ -17,6 +18,8 @@ public class ProgressUI extends JPanel{
 	private final JLabel scoreLead = new JLabel("Your Score:");
 	private final JLabel score = new JLabel("Score");
 	public static Tier Tier;
+	public static int tierNumber;
+	public static int d;
 	private final ProgressInGame n = new ProgressInGame();
 	public ProgressUI() {
 		setLayout(new GridLayout(0, 1, 0, 0));
@@ -35,7 +38,14 @@ public class ProgressUI extends JPanel{
 				try {
 					System.out.println(Tier.getTierNumber());
 					Tier.initializeEvents();
-					Tier.openVideo(n, DataStorage.hi);
+					JFrame frame = Tier.openVideo(n, DataStorage.hi);
+					try {
+						frame.wait(10000);
+					} catch (InterruptedException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+					Tier.closeVideo(frame);
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
