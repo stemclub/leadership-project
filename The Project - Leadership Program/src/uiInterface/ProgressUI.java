@@ -38,14 +38,7 @@ public class ProgressUI extends JPanel{
 				try {
 					System.out.println(Tier.getTierNumber());
 					Tier.initializeEvents();
-					JFrame frame = Tier.openVideo(n, DataStorage.hi);
-					try {
-						frame.wait(10000);
-					} catch (InterruptedException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
-					Tier.closeVideo(frame);
+					Tier.openVideo(n, DataStorage.hi);
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
