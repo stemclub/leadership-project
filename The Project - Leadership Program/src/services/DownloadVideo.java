@@ -90,7 +90,7 @@ public class DownloadVideo {
 			}
 		count3 = count3 + 1;
 		}
-		URL website = new URL("https://copy.com/YuKcsyvkg96gg9DZ/LeadVideos/1/a.mp4?download");
+		URL website = new URL("https://copy.com/rdfe0sDKatG2IMRl/LeadVideos/1/a.mp4?download");
 		try {
 			int count = 0;
 			while (count < 6) {
@@ -99,7 +99,7 @@ public class DownloadVideo {
 					while (count2 < 1) {
 						//System.out.println(count + " " + count2);
 						System.out.print("Downloading " + DataStorage.filePaths[count][count2] + "... ");
-						website = new URL("https://copy.com/YuKcsyvkg96gg9DZ/" + DataStorage.filePaths[count][count2] + "?download");
+						website = new URL("https://copy.com/rdfe0sDKatG2IMRl/" + DataStorage.filePaths[count][count2] + "?download");
 						ReadableByteChannel rbc = Channels.newChannel(website.openStream());
 						FileOutputStream fos = new FileOutputStream(path + "/" + DataStorage.filePaths[count][count2]);
 						fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
@@ -111,7 +111,7 @@ public class DownloadVideo {
 					while (count2 < 3) {
 						//System.out.println(count + " " + count2);
 						System.out.print("Downloading " + DataStorage.filePaths[count][count2] + "... ");
-						website = new URL("https://copy.com/YuKcsyvkg96gg9DZ/" + DataStorage.filePaths[count][count2] + "?download");
+						website = new URL("https://copy.com/rdfe0sDKatG2IMRl/" + DataStorage.filePaths[count][count2] + "?download");
 						ReadableByteChannel rbc = Channels.newChannel(website.openStream());
 						FileOutputStream fos = new FileOutputStream(path + "/" + DataStorage.filePaths[count][count2]);
 						fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
@@ -123,7 +123,7 @@ public class DownloadVideo {
 					while (count2 < 6) {
 						//System.out.println(count + " " + count2);
 						System.out.print("Downloading " + DataStorage.filePaths[count][count2] + "... ");
-						website = new URL("https://copy.com/YuKcsyvkg96gg9DZ/" + DataStorage.filePaths[count][count2] + "?download");
+						website = new URL("https://copy.com/rdfe0sDKatG2IMRl/" + DataStorage.filePaths[count][count2] + "?download");
 						ReadableByteChannel rbc = Channels.newChannel(website.openStream());
 						FileOutputStream fos = new FileOutputStream(path + "/" + DataStorage.filePaths[count][count2]);
 						fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
@@ -135,14 +135,14 @@ public class DownloadVideo {
 				count = count + 1;
 			}
 			System.out.print("Downloading LeadVideos/Background.mp4... ");
-			website = new URL("https://copy.com/YuKcsyvkg96gg9DZ/LeadVideos/Background.mp4?download");
+			website = new URL("https://copy.com/rdfe0sDKatG2IMRl/LeadVideos/Background.mp4?download");
 			ReadableByteChannel rbc = Channels.newChannel(website.openStream());
 			FileOutputStream fos = new FileOutputStream(path + "/LeadVideos/Background.mp4");
 			fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
 			fos.close();
 			System.out.println("[Success]");
 			System.out.print("Downloading LeadVideos/Intro.mp4... ");
-			website = new URL("https://copy.com/YuKcsyvkg96gg9DZ/LeadVideos/Intro.mp4?download");
+			website = new URL("https://copy.com/rdfe0sDKatG2IMRl/LeadVideos/Intro.mp4?download");
 			rbc = Channels.newChannel(website.openStream());
 			fos = new FileOutputStream(path + "/LeadVideos/Intro.mp4");
 			fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
