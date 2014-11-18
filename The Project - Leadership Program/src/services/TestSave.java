@@ -19,13 +19,13 @@ public class TestSave {
         FXMediaPlayer player = new FXMediaPlayer();
         player.setMediaURLInput(mediaURL);
         JFrame frame = player.main();
-        Thread.sleep(50000);
+        Thread.sleep(31000);
         Tier.closeVideo(frame);
         String mediaURL1 = "/LeadVideos/Intro.mp4";
         FXMediaPlayer player1 = new FXMediaPlayer();
         player1.setMediaURLInput(mediaURL1);
         JFrame frame1 = player1.main();
-        Thread.sleep(25000);
+        Thread.sleep(14000);
         Tier.closeVideo(frame1);
 		n.restartGame();
 		n.initializeArrays();
