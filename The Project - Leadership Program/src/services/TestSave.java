@@ -12,6 +12,8 @@ import uiInterface.ProgressUI;
 public class TestSave {
 	public static void main(String[] args) throws IOException, InterruptedException{
 		//Tests a save! The title doesn't tell you anything about this file...
+		Updater updater = new Updater();
+		updater.main();
         ProgressInGame n = new ProgressInGame();
         String mediaURL = "/LeadVideos/Background.mp4";
         FXMediaPlayer player = new FXMediaPlayer();
@@ -29,7 +31,6 @@ public class TestSave {
 		n.initializeArrays();
 		//ReadFile.read(n);
 		WriteSave.saveData(n);
-		Updater updater = new Updater();
 		if (updater.main()) {
 			WriteSave.saveData(n);
 			Tier Tier = new Tier(0,1);
