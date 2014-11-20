@@ -18,9 +18,9 @@ public class ChoicesUI extends JPanel{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private JButton Choice1 = new JButton("Choice 1");
-	private JButton Choice2 = new JButton("Choice 2");
-	private JButton Choice3 = new JButton("Choice 3");
+	private JButton Choice1 = new JButton("Choice 1" + DataStorage.choicesSubtitles[Tier.getTierNumber()][Tier.getNumberOfEvents()-1][0]);
+	private JButton Choice2 = new JButton("Choice 2" + DataStorage.choicesSubtitles[Tier.getTierNumber()][Tier.getNumberOfEvents()-1][1]);
+	private JButton Choice3 = new JButton("Choice 3" + DataStorage.choicesSubtitles[Tier.getTierNumber()][Tier.getNumberOfEvents()-1][2]);
 	private JButton ReplayVideo = new JButton("Replay");
 	private JPanel ChoicesPanel = new JPanel();
 	public static char choice;
