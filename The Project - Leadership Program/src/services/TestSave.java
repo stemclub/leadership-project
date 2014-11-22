@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import javax.swing.JFrame;
 
+import objects.DataStorage;
 import objects.Tier;
 import uiInterface.ChoicesUI;
 import uiInterface.FXMediaPlayer;
@@ -27,17 +28,15 @@ public class TestSave {
         JFrame frame1 = player1.main();
         Thread.sleep(14000);
         Tier.closeVideo(frame1);
+        WriteSave.saveData(n);
+		Tier Tier = new Tier(0,1);
+		ProgressUI.Tier = Tier;
+		ChoicesUI.Tier = Tier;
+		Tier.initializeEvents();
 		n.restartGame();
 		n.initializeArrays();
+		System.out.println(DataStorage.choicesSubtitles[0][0][0]);
 		//ReadFile.read(n);
-		WriteSave.saveData(n);
-		if (updater.main()) {
-			WriteSave.saveData(n);
-			Tier Tier = new Tier(0,1);
-			Tier.initializeEvents();
-			ProgressUI.Tier = Tier;
-			ChoicesUI.Tier = Tier;
-		}
 	}
 }
 	
