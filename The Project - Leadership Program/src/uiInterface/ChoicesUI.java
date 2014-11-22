@@ -18,9 +18,12 @@ public class ChoicesUI extends JPanel{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private JButton Choice1 = new JButton("Choice 1");
-	private JButton Choice2 = new JButton("Choice 2");
-	private JButton Choice3 = new JButton("Choice 3");
+	String we = "Do the work yourself";
+	String we1 = "Threaten them to tell the teacher if they do not meet with you at some time";
+	String we2 = "Set up a mutual calendar for meetings - promise them a surprise";
+	private JButton Choice1 = new JButton("Choice 1: " + we);
+	private JButton Choice2 = new JButton("Choice 2: " + we1);
+	private JButton Choice3 = new JButton("Choice 3: " + we2);
 	//private JButton Choice1 = new JButton("Choice 1" + DataStorage.choicesSubtitles[Tier.getTierNumber()][Tier.getNumberOfEvents()-1][0]);
 	//private JButton Choice2 = new JButton("Choice 2" + DataStorage.choicesSubtitles[Tier.getTierNumber()][Tier.getNumberOfEvents()-1][1]);
 	//private JButton Choice3 = new JButton("Choice 3" + DataStorage.choicesSubtitles[Tier.getTierNumber()][Tier.getNumberOfEvents()-1][2]);
@@ -44,10 +47,10 @@ public class ChoicesUI extends JPanel{
 		Choice1.setBackground(Color.ORANGE);
 		add(Choice1);
 		Choice1.addActionListener(listener);
-		System.out.println(Tier.getTierNumber());
-		System.out.println(Tier.getNumberOfEvents());
-		int c = Tier.getNumberOfEvents()-1;
-		System.out.println(c);
+		//System.out.println(Tier.getTierNumber());
+		//System.out.println(Tier.getNumberOfEvents());
+		//int c = Tier.getNumberOfEvents()-1;
+		//System.out.println(c);
 		//System.out.println(DataStorage.choicesSubtitles[Tier.getTierNumber()][c][0]);
 		//System.out.println("Choice 1: " + DataStorage.choicesSubtitles[Tier.getTierNumber()][Tier.getNumberOfEvents()-1][0]);
 		Choice2.setForeground(new Color(255, 0, 255));
@@ -106,6 +109,9 @@ public class ChoicesUI extends JPanel{
 			System.out.println(DataStorage.filePaths[Tier.getTierNumber()+1].length);
 			Tier newTier = new Tier(Tier.getTierNumber()+1, DataStorage.filePaths[Tier.getTierNumber()+1].length);
 			Tier = newTier;
+			we = "Choice 1: " + DataStorage.choicesSubtitles[Tier.getTierNumber()][Tier.getNumberOfEvents()-1][0];
+			we1 = "Choice 2: " + DataStorage.choicesSubtitles[Tier.getTierNumber()][Tier.getNumberOfEvents()-1][1];
+			we2 = "Choice 3: " + DataStorage.choicesSubtitles[Tier.getTierNumber()][Tier.getNumberOfEvents()-1][2];
 			ProgressUI.Tier = newTier;
 			System.out.println(choice);
 			System.out.println(replayVideo);

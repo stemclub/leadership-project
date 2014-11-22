@@ -13,6 +13,7 @@ import uiInterface.ProgressUI;
 public class TestSave {
 	public static void main(String[] args) throws IOException, InterruptedException{
 		//Tests a save! The title doesn't tell you anything about this file...
+		System.out.println(DataStorage.choicesSubtitles[0][0][0]);
 		Updater updater = new Updater();
 		updater.main();
         ProgressInGame n = new ProgressInGame();
