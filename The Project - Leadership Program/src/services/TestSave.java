@@ -35,7 +35,7 @@ public class TestSave {
 		Tier.initializeEvents();
 		n.restartGame();
 		n.initializeArrays();
-		System.out.println(DataStorage.choicesSubtitles[0][0][0]);
+		//System.out.println(DataStorage.choicesSubtitles[0][0][0]);
 		//ReadFile.read(n);
 	}
 }

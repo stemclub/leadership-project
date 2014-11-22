@@ -48,18 +48,18 @@ public class ChoicesUI extends JPanel{
 		System.out.println(Tier.getNumberOfEvents());
 		int c = Tier.getNumberOfEvents()-1;
 		System.out.println(c);
-		System.out.println(DataStorage.choicesSubtitles[Tier.getTierNumber()][c][0]);
-		System.out.println("Choice 1: " + DataStorage.choicesSubtitles[Tier.getTierNumber()][Tier.getNumberOfEvents()-1][0]);
+		//System.out.println(DataStorage.choicesSubtitles[Tier.getTierNumber()][c][0]);
+		//System.out.println("Choice 1: " + DataStorage.choicesSubtitles[Tier.getTierNumber()][Tier.getNumberOfEvents()-1][0]);
 		Choice2.setForeground(new Color(255, 0, 255));
 		
 		add(Choice2);
 		Choice2.addActionListener(listener);
-		System.out.println("Choice 2" + DataStorage.choicesSubtitles[Tier.getTierNumber()][Tier.getNumberOfEvents()-1][1]);
+		//System.out.println("Choice 2" + DataStorage.choicesSubtitles[Tier.getTierNumber()][Tier.getNumberOfEvents()-1][1]);
 		Choice3.setForeground(new Color(0, 0, 255));
 		
 		add(Choice3);
 		Choice3.addActionListener(listener);
-		System.out.println("Choice 3" + DataStorage.choicesSubtitles[Tier.getTierNumber()][Tier.getNumberOfEvents()-1][2]);
+		//System.out.println("Choice 3" + DataStorage.choicesSubtitles[Tier.getTierNumber()][Tier.getNumberOfEvents()-1][2]);
 		ReplayVideo.setBackground(new Color(0, 128, 0));
 		
 		add(ReplayVideo);
