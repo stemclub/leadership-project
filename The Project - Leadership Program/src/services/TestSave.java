@@ -11,6 +11,7 @@ import uiInterface.FXMediaPlayer;
 import uiInterface.ProgressUI;
 
 public class TestSave {
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) throws IOException, InterruptedException{
 		//Tests a save! The title doesn't tell you anything about this file...
 		System.out.println(DataStorage.choicesSubtitles[0][0][0]);
@@ -36,6 +37,9 @@ public class TestSave {
 		Tier.initializeEvents();
 		n.restartGame();
 		n.initializeArrays();
+		Thread.sleep(DataStorage.times[0][0] * 1000);
+		Tier.closeVideo(ProgressUI.frame);
+		
 		//System.out.println(DataStorage.choicesSubtitles[0][0][0]);
 		//ReadFile.read(n);
 	}

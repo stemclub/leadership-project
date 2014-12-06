@@ -49,7 +49,7 @@ public class Tier {
 		System.out.println(score);
 	}
 	
-	public void openVideo(ProgressInGame n, RunUI UI) throws IOException{
+	public JFrame openVideo(ProgressInGame n, RunUI UI) throws IOException{
 		int d = n.nextEventToBeDone()[1];
 		//System.out.println(d);
 		String h = events[d].getVideoPath();
@@ -59,8 +59,8 @@ public class Tier {
 		String g = h.substring(11);
 		g = "/Videos" + g;
 		player.setBinMediaURLInput(g);
-		JFrame frame = player.main();
-		/*try {
+		JFrame frame = player.main();/*
+		try {
 			Thread.sleep(1000 * (DataStorage.times[tierNumber][d]+15));
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
@@ -73,6 +73,7 @@ public class Tier {
 		RunUI.choicesScreen.setN(n);
 		RunUI.choicesScreen.setTier(tierNumber);
 		RunUI.choicesScreen.setEvent(d);
+		return frame;
 	}
 	
 	public static void closeVideo(JFrame frame){

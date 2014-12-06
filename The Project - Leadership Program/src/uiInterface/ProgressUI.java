@@ -20,6 +20,8 @@ public class ProgressUI extends JPanel{
 	public static Tier Tier;
 	public static int tierNumber;
 	public static int d;
+	public static JFrame frame;
+	public static boolean done;
 	private final ProgressInGame n = new ProgressInGame();
 	public ProgressUI() {
 		setLayout(new GridLayout(0, 1, 0, 0));
@@ -38,11 +40,12 @@ public class ProgressUI extends JPanel{
 				try {
 					System.out.println(Tier.getTierNumber());
 					Tier.initializeEvents();
-					Tier.openVideo(n, DataStorage.hi);
+					frame = Tier.openVideo(n, DataStorage.hi);
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
+				done = true;
 			}
 		});
 		add(play);
