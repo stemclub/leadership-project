@@ -37,8 +37,14 @@ public class TestSave {
 		Tier.initializeEvents();
 		n.restartGame();
 		n.initializeArrays();
-		Thread.sleep(DataStorage.times[0][0] * 1000);
-		Tier.closeVideo(ProgressUI.frame);
+		while(true){
+			if(ProgressUI.done == true){
+				Thread.sleep(DataStorage.times[0][0] * 1000);
+				Tier.closeVideo(ProgressUI.frame);
+				ProgressUI.done = false;
+				break;
+			}
+		}
 		
 		//System.out.println(DataStorage.choicesSubtitles[0][0][0]);
 		//ReadFile.read(n);
