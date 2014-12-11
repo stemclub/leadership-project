@@ -37,13 +37,16 @@ public class TestSave {
 		Tier.initializeEvents();
 		n.restartGame();
 		n.initializeArrays();
-		while(true){
-			if(ProgressUI.done == true){
-				Thread.sleep(DataStorage.times[0][0] * 1000);
-				Tier.closeVideo(ProgressUI.frame);
-				ProgressUI.done = false;
-				break;
+		for(int x = 0; x <= 5; x++){
+			while(true){
+				if(ProgressUI.done == true){
+					Thread.sleep(DataStorage.times[0][0] * 1000);
+					Tier.closeVideo(ProgressUI.frame);
+					ProgressUI.done = false;
+					break;
+				}
 			}
+			
 		}
 		
 		//System.out.println(DataStorage.choicesSubtitles[0][0][0]);
